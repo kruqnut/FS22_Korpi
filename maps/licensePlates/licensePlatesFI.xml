@@ -1,0 +1,88 @@
+<licensePlates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/mapLicensePlates.xsd">
+    <font name="LICENSE_PLATE_US" />
+	<!--	FR	US	DE	UK	-->
+
+    <licensePlate filename="maps/licensePlates/licensePlatesFI.i3d" node="0" type="ELONGATED" width="0.5" height="0.11">
+        <font size="0.08" scaleX="1" scaleY="1"/>
+
+        <variations>
+            <variation> <!--	TYÖKONE 123-ABC	-->
+				
+                <value node="0|0" numerical="true" alphabetical="false" special="false" />
+                <value node="0|1" numerical="true" alphabetical="false" special="false" />
+                <value node="0|2" numerical="true" alphabetical="false" special="false" />
+				
+                <value node="0|3" character="-" locked="true" />
+				
+                <value node="0|4" numerical="false" alphabetical="true" special="false"/>
+                <value node="0|5" numerical="false" alphabetical="true" special="false"/>
+                <value node="0|6" numerical="false" alphabetical="true" special="false" />
+				
+
+                <color shaderParameter="colorMat0" color="0.922 0.356 0.012"/>
+                <color shaderParameter="colorMat1" color="0.922 0.356 0.012"/>
+            </variation>
+            <variation> <!--	AJONEUVO ABC-123, vanha ei EU merkintää	-->
+				
+                <value node="0|0" numerical="false" alphabetical="true" special="false" />
+                <value node="0|1" numerical="false" alphabetical="true" special="false" />
+                <value node="0|2" numerical="false" alphabetical="true" special="false" />
+				
+                <value node="0|3" character="-" locked="true" />
+				
+                <value node="0|4" numerical="true" alphabetical="false" special="false"/>
+                <value node="0|5" numerical="true" alphabetical="false" special="false"/>
+                <value node="0|6" numerical="true" alphabetical="false" special="false" />
+				
+
+                <color shaderParameter="colorMat0" color="0.829 0.829 0.829"/>
+                <color shaderParameter="colorMat1" color="0.829 0.829 0.829"/>
+            </variation>
+        </variations>
+
+        <frame node="2" widthOffset="0.005" heightOffsetTop="0.005" heightOffsetBot="0.015"/>
+    </licensePlate>
+
+    <licensePlate filename="maps/licensePlates/licensePlatesFI.i3d" node="1" type="SQUARISH" width="0.130" height="0.130">
+        <font size="0.05" scaleX="1" scaleY="1"/>
+
+        <variations>
+            <variation> <!-- TYÖKONE 123 ABC-->
+                <value node="0|0" numerical="true" alphabetical="false" />
+                <value node="0|1" numerical="true" alphabetical="false" />
+                <value node="0|2" numerical="true" alphabetical="false" />
+
+                <value node="0|3" character="_" locked="true" />
+				
+                <value node="0|4" numerical="false"  alphabetical="true" />
+                <value node="0|5" numerical="false"  alphabetical="true" />
+                <value node="0|6" numerical="false"  alphabetical="true" />
+
+                <color shaderParameter="colorMat0" color="0.922 0.356 0.012"/>
+                <color shaderParameter="colorMat1" color="0.922 0.356 0.012"/>
+            </variation>
+            <variation> <!--	AJONEUVO ABC 123, vanha ei EU merkintää	-->
+                <value node="0|0" numerical="false" alphabetical="true" special="false" />
+                <value node="0|1" numerical="false" alphabetical="true" special="false" />
+                <value node="0|2" numerical="false" alphabetical="true" special="false" />
+				
+                <value node="0|3" character="_" locked="true" />
+				
+                <value node="0|4" numerical="true" alphabetical="false" special="false"/>
+                <value node="0|5" numerical="true" alphabetical="false" special="false"/>
+                <value node="0|6" numerical="true" alphabetical="false" special="false" />
+
+                <color shaderParameter="colorMat0" color="0.829 0.829 0.829"/>
+                <color shaderParameter="colorMat1" color="0.829 0.829 0.829"/>
+            </variation>
+        </variations>
+
+        <frame node="2" widthOffset="0.005" heightOffsetTop="0.005" heightOffsetBot="0.015"/>
+    </licensePlate>
+
+    <colorConfigurations shaderParameter="colorMat2" useDefaultColors="true">
+        <colorConfiguration name="$l10n_ui_colorBlack" color="0.0212 0.0212 0.0212" isDefault="true"/>
+    </colorConfigurations>
+
+    <placement defaultType="back"/>
+</licensePlates>

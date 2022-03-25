@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="grapeEffects" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/effects/grape/arrays/fruitArray2x48.png"/>
+    <File fileId="3" filename="$data/placeables/lizard/grape/grape_fmask.png"/>
+    <File fileId="2" filename="$data/placeables/lizard/grape/grape_normal.png"/>
+    <File fileId="4" filename="$data/shaders/motionPathShader.xml"/>
+    <File fileId="1" filename="../../placeables/blueberry/grape_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="grape_mat" materialId="4" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <CustomParameter name="scrollPosition" value="0.1 0 1 0"/>
+      <CustomParameter name="prevScrollPosition" value="0.1 0 1 0"/>
+      <CustomParameter name="fadeProgress" value="1 0 1 0"/>
+      <CustomParameter name="visibilityX" value="50 -50 0 0"/>
+      <CustomParameter name="visibilityY" value="50 -50 0 0"/>
+      <CustomParameter name="visibilityZ" value="50 -50 0 0"/>
+      <CustomParameter name="density" value="1 0 0 0"/>
+      <CustomParameter name="verticalOffset" value="0 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="grape_fruitsLeaves.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="grapeEffects_fruitsLeaves" nodeId="7">
+        <TransformGroup name="grapeEffects_fruitsLeaves_meshes" nodeId="8">
+          <Shape shapeId="1" name="grapeEffects_fruitsLeaves_nr2_rl48_v1" nodeId="9" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

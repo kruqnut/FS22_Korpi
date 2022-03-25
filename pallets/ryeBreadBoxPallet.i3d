@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="ryeBreadBoxPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="textures/ryeBreadBox_diffuse.png" />
+    <File fileId="2" filename="$data/objects/pallets/bakeryBoxPallet/bakeryBox_normal.png" />
+    <File fileId="3" filename="$data/objects/pallets/bakeryBoxPallet/bakeryBox_specular.png" />
+    <File fileId="4" filename="$data/objects/pallets/euroPallet01_diffuse.png" />
+    <File fileId="5" filename="$data/objects/pallets/euroPallet01_normal.png" />
+    <File fileId="6" filename="$data/objects/pallets/euroPallet01_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="bakeryBox_mat" materialId="3">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="euroPallet01_mat" materialId="2">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="ryeBreadBoxPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="bakeryBoxPallet_component1" shapeId="1" dynamic="true" compound="true" staticFriction="1.3" dynamicFriction="1.3" density="0" collisionMask="2109442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="150" nodeId="1">
+      <Shape name="pallet_vis" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="2">
+        <Shape name="dynamicMountTrigger" translation="0 0.0904753 0" shapeId="3" kinematic="true" trigger="true" collisionMask="134217728" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="3"/>
+        <TransformGroup name="dischargeNode" translation="0 0.8 0" nodeId="4"/>
+        <TransformGroup name="content" nodeId="5">
+          <TransformGroup name="bakeryBox01" lodDistance="0 4" collision="false" density="0" nodeId="6">
+            <Shape name="LOD0" translation="0.288287 0.146177 1.90735e-08" rotation="0 180 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="7">
+              <Shape name="bakeryBox01Tension" translation="0 0.063205 0" shapeId="5" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="8"/>
+            </Shape>
+            <Shape name="LOD1" translation="0.288287 0.146177 1.90735e-08" rotation="0 180 0" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="9"/>
+          </TransformGroup>
+          <TransformGroup name="bakeryBox02" lodDistance="0 4" collision="false" density="0" nodeId="10">
+            <Shape name="LOD0" translation="-0.296154 0.146177 1.90735e-08" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="11">
+              <Shape name="bakeryBox02Tension" translation="0 0.063205 0" shapeId="7" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="12"/>
+            </Shape>
+            <Shape name="LOD1" translation="-0.296 0.146177 1.90735e-08" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="13"/>
+          </TransformGroup>
+          <TransformGroup name="bakeryBox03" lodDistance="0 4" collision="false" density="0" nodeId="14">
+            <Shape name="LOD0" translation="-0.296154 0.326177 1.90735e-08" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="15">
+              <Shape name="bakeryBox03Tension" translation="0 0.063205 0" shapeId="8" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="16"/>
+            </Shape>
+            <Shape name="LOD1" translation="-0.296 0.326177 1.90735e-08" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="17"/>
+          </TransformGroup>
+          <TransformGroup name="bakeryBox04" lodDistance="0 4" collision="false" density="0" nodeId="18">
+            <Shape name="LOD0" translation="0.288287 0.326177 1.90735e-08" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="19">
+              <Shape name="bakeryBox04Tension" translation="0 0.063205 0" shapeId="9" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="20"/>
+            </Shape>
+            <Shape name="LOD1" translation="0.288287 0.326177 1.90735e-08" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="21"/>
+          </TransformGroup>
+          <TransformGroup name="bakeryBox05" lodDistance="0 4" collision="false" density="0" nodeId="22">
+            <Shape name="LOD0" translation="0.288287 0.506177 1.90735e-08" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="23">
+              <Shape name="bakeryBox05Tension" translation="0 0.063205 0" shapeId="10" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="24"/>
+            </Shape>
+            <Shape name="LOD1" translation="0.288 0.506177 1.90735e-08" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="25"/>
+          </TransformGroup>
+          <TransformGroup name="bakeryBox06" lodDistance="0 4" collision="false" density="0" nodeId="26">
+            <Shape name="LOD0" translation="-0.296154 0.506177 1.90735e-08" rotation="0 180 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="27">
+              <Shape name="bakeryBox06Tension" translation="0 0.063205 7.15733e-17" shapeId="11" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="28"/>
+            </Shape>
+            <Shape name="LOD1" translation="-0.296 0.506177 1.90735e-08" rotation="0 180 0" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="29"/>
+          </TransformGroup>
+          <TransformGroup name="bakeryBox07" lodDistance="0 4" collision="false" density="0" nodeId="30">
+            <Shape name="LOD0" translation="-0.296154 0.686 1.90735e-08" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="31">
+              <Shape name="bakeryBox07Tension" translation="0 0.0632052 0" shapeId="12" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="32"/>
+            </Shape>
+            <Shape name="LOD1" translation="-0.296 0.686177 1.90735e-08" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="33"/>
+          </TransformGroup>
+          <TransformGroup name="bakeryBox08" lodDistance="0 4" collision="false" density="0" nodeId="34">
+            <Shape name="LOD0" translation="0.288287 0.686 1.90735e-08" rotation="0 180 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="35">
+              <Shape name="bakeryBox08Tension" translation="1.18274e-40 0.0632052 9.6578e-25" shapeId="13" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="36"/>
+            </Shape>
+            <Shape name="LOD1" translation="0.288287 0.686177 1.90735e-08" rotation="0 180 0" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="37"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="collisions" collision="false" clipDistance="10" nodeId="38">
+          <Shape name="floorCollision01" translation="-0.299024 0.0732407 0" shapeId="14" compoundChild="true" staticFriction="1.3" dynamicFriction="1.3" density="0" collisionMask="16781578" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="39"/>
+          <Shape name="floorCollision02" translation="0.299024 0.0732407 0" shapeId="15" compoundChild="true" staticFriction="1.3" dynamicFriction="1.3" density="0" collisionMask="16781578" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="40"/>
+        </TransformGroup>
+      </Shape>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

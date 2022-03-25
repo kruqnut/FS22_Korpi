@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sellingStationGenericNoCover" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/maps/textures/shared/wheatBottom_diffuse.png"/>
+    <File fileId="7" filename="$data/maps/textures/shared/wheatBottom_normal.png"/>
+    <File fileId="1" filename="$data/placeables/sellingStationGeneric/sellingStationGeneric_diffuse.png"/>
+    <File fileId="2" filename="$data/placeables/sellingStationGeneric/sellingStationGeneric_normal.png"/>
+    <File fileId="3" filename="$data/placeables/sellingStationGeneric/sellingStationGeneric_specular.png"/>
+    <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="sellingStationGeneric_mat" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="wheatBottom_mat" materialId="6" specularColor="0.2 1 0" customShaderId="4">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sellingStationGenericNoCover.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="grainGate" lockedgroup="true" clipDistance="300" nodeId="12" materialIds="5" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="2" name="seedPlane" translation="0 0.0625 0" clipDistance="300" nodeId="13" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="colShape" static="true" collisionMask="262399" nodeId="14" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="4" name="tipCollision" visibility="false" static="true" collisionMask="524288" density="0.0001" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="14">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

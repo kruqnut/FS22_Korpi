@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeables>
+	
+    <placeable mapBoundId="sellingStationMainGrainSilo" 			filename="$mapdir$/maps/placeables/sellingStation/sellingStationMainGrainSilo.xml"    					position="-173.842 0 -19.854" 		rotation="0 -80 0" />
+	<placeable mapBoundId="sellingStationMainGrainSilo" 			filename="$mapdir$/maps/placeables/sellingStation1/sellingStationMainGrainSilo.xml"   					position="-55.98 16.938 -98.119" 	rotation="0 -64.52 0" />
+    <placeable mapBoundId="gasStation"            					filename="$mapdir$/maps/placeables/gasStation/gasStation.xml"              		      					position="-147.559 5.147 -72.989"  	rotation="0 -45 0" />
+    <placeable mapBoundId="sellingStationBales"        				filename="$mapdir$/maps/placeables/sellingStationBales/sellingStationBales.xml"       					position="-188.918 0.591 5.435"    	rotation="0 0 0" />
+
+	<placeable mapBoundId="sellingStationWoodHeatingPlant"          filename="$mapdir$/maps/placeables/sellingStationWoodHeatingPlant/sellingStationWoodHeatingPlant.xml"   position="-205.826 0.672 13.406"    rotation="0 80.451 0" />
+
+	<placeable mapBoundId="rockCrusher"        						filename="$mapdir$/maps/placeables/rockCrusher/rockCrusher.xml"       									position="-70.914 17.410 -89.885"   rotation="180 24.742 179.999" />
+
+    <placeable mapBoundId="sawmill" 	   							filename="$mapdir$/maps/placeables/sawmill/sawmill.xml" 												position="-113.074 8.288 3.582"   rotation="180 85.820 180" />
+
+	
+    <placeable mapBoundId="sellingStationVehicles" 	   				filename="$mapdir$/maps/placeables/sellingStationVehicles/sellingStationVehicles.xml" 					position="-135.692 5.148 -68.424"   rotation="-180 -88.105 -180" />
+
+</placeables>

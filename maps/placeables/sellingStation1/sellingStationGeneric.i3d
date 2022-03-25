@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sellingStationGeneric" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sellingStationGeneric.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="maaAineksetMyynti" lockedgroup="true" nodeId="10">
+        <TransformGroup name="transform" nodeId="11"/>
+        <TransformGroup name="transform" nodeId="12"/>
+        <Shape shapeId="1" name="playerTrigger" translation="0 1.09354 0" visibility="false" static="true" trigger="true" collisionMask="1048576" density="0.0001" nodeId="13" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="2" name="unloadTrigger" translation="0 0.400414 0" scale="1.60913 1 1.31391" static="true" trigger="true" collisionMask="1073741824" density="0.0001" nodeId="14" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="3" name="colShape" visibility="false" static="true" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="aiNodeLeft" rotation="0 -90 0" nodeId="16"/>
+        <TransformGroup name="aiNodeRight" rotation="0 90 0" nodeId="17"/>
+        <TransformGroup name="unloadTriggerMarker" nodeId="18"/>
+        <TransformGroup name="teleportNodeLeft" translation="-5.19433 0 2.8201" rotation="0 95 0" nodeId="19"/>
+        <TransformGroup name="teleportNodeRight" translation="5.19963 0 2.64104" rotation="0 -100 0" nodeId="20"/>
+        <Shape shapeId="4" name="tipCollision" visibility="false" static="true" collisionMask="524288" nodeId="21" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-6.11935 0 -3.40442" nodeId="22">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="12.1324 0 6.80823" nodeId="23"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="15">
+      <Attribute name="noTireTracks" type="boolean" value="true"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

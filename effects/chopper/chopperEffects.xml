@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<motionPathEffects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mapMotionPathEffects.xsd">
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="STRAW_CHOPPER" filename="$data/effects/chopper/strawChopper.i3d">
+        <effectGeneration rootNode="0|0"/>
+        <typeDefinition fillTypes="WHEAT BARLEY OAT MAIZE CANOLA SOYBEAN SUNFLOWER SORGHUM STRAW SNOW RYE HEMP CRANBERRY HEMP_WINDROW"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="8"  rowLength="6" skipPositions="0" boundingBox="16 5 14" boundingBoxCenter="0 0 -7"/>
+            <effectMesh node="0|0|1" numRows="16" rowLength="12" skipPositions="0" boundingBox="16 5 14" boundingBoxCenter="0 0 -7"/>
+            <effectMesh node="0|0|2" numRows="16" rowLength="18" skipPositions="0" boundingBox="16 5 14" boundingBoxCenter="0 0 -7"/>
+            <effectMesh node="0|0|3" numRows="16" rowLength="22" skipPositions="0" boundingBox="16 5 14" boundingBoxCenter="0 0 -7"/>
+            <effectMesh node="0|0|4" numRows="20" rowLength="31" skipPositions="0" boundingBox="16 5 14" boundingBoxCenter="0 0 -7"/>
+            <effectMesh node="0|0|5" numRows="29" rowLength="31" skipPositions="0" boundingBox="16 5 14" boundingBoxCenter="0 0 -7"/>
+        </effectMeshes>
+
+        <effectMaterials rootNode="0|1">
+
+<!--  CHOPPER  (spreading straw from the end of the harvester) -->
+
+            <effectMaterial materialType="CHOPPER" node="0|1|0|0" fillTypes="WHEAT BARLEY OAT STRAW RYE HEMP CRANBERRY HEMP_WINDROW" speedScale="1.0">
+                <customShaderParameter name="sizeScale" value="0.75 3.75 0.0 0.0"/>
+            </effectMaterial>
+            <effectMaterial materialType="CHOPPER" node="0|1|0|1" fillTypes="MAIZE" densityScale="0.75" speedScale="1.0">
+                <customShaderParameter name="sizeScale" value="0.75 2.5 0.0 0.0"/>
+            </effectMaterial>
+            <effectMaterial materialType="CHOPPER" node="0|1|0|2" fillTypes="CANOLA" speedScale="1.0">
+                <customShaderParameter name="sizeScale" value="0.75 3.75 0.0 0.0"/>
+            </effectMaterial>
+            <effectMaterial materialType="CHOPPER" node="0|1|0|3" fillTypes="SOYBEAN" speedScale="1.0">
+                <customShaderParameter name="sizeScale" value="0.75 3.75 0.0 0.0"/>
+            </effectMaterial>
+            <effectMaterial materialType="CHOPPER" node="0|1|0|4" fillTypes="SUNFLOWER" densityScale="0.75" speedScale="1.0">
+                <customShaderParameter name="sizeScale" value="0.75 2.5 0.0 0.0"/>
+            </effectMaterial>
+            <effectMaterial materialType="CHOPPER" node="0|1|0|5" fillTypes="SORGHUM" densityScale="0.5" speedScale="1.0">
+                <customShaderParameter name="sizeScale" value="0.75 2.5 0.0 0.0"/>
+            </effectMaterial>
+            <effectMaterial materialType="CHOPPER" node="0|1|0|6" fillTypes="SNOW" speedScale="1.0">
+                <customShaderParameter name="sizeScale" value="0.75 3.75 0.0 0.0"/>
+            </effectMaterial>
+
+<!--  CHAFFER (spreading straw from the sides of the harvester) -->
+
+            <effectMaterial materialType="CHAFFER" node="0|1|1|0" fillTypes="WHEAT BARLEY OAT STRAW RYE HEMP CRANBERRY HEMP_WINDROW" speedScale="1.0">
+                <customShaderParameter name="sizeScale" value="0.25 3.75 0.0 0.0"/>
+            </effectMaterial>
+            <effectMaterial materialType="CHAFFER" node="0|1|1|1" fillTypes="MAIZE" speedScale="1.0">
+                <customShaderParameter name="sizeScale" value="0.25 3.75 0.0 0.0"/>
+            </effectMaterial>
+            <effectMaterial materialType="CHAFFER" node="0|1|1|2" fillTypes="CANOLA" speedScale="1.0">
+                <customShaderParameter name="sizeScale" value="0.25 3.75 0.0 0.0"/>
+            </effectMaterial>
+            <effectMaterial materialType="CHAFFER" node="0|1|1|3" fillTypes="SOYBEAN" speedScale="1.0">
+                <customShaderParameter name="sizeScale" value="0.25 3.75 0.0 0.0"/>
+            </effectMaterial>
+            <effectMaterial materialType="CHAFFER" node="0|1|1|4" fillTypes="SUNFLOWER" speedScale="1.0">
+                <customShaderParameter name="sizeScale" value="0.25 3.75 0.0 0.0"/>
+            </effectMaterial>
+            <effectMaterial materialType="CHAFFER" node="0|1|1|5" fillTypes="SORGHUM" speedScale="1.0">
+                <customShaderParameter name="sizeScale" value="0.25 3.75 0.0 0.0"/>
+            </effectMaterial>
+            <effectMaterial materialType="CHAFFER" node="0|1|1|6" fillTypes="SNOW" speedScale="1.0">
+                <customShaderParameter name="sizeScale" value="0.25 3.75 0.0 0.0"/>
+            </effectMaterial>
+
+<!--  DROP  (dropping straw on the ground) -->
+
+            <effectMaterial materialType="DROP" node="0|1|2|0" fillTypes="WHEAT BARLEY OAT STRAW RYE HEMP HEMP_WINDROW" speedScale="1.0">
+                <customShaderParameter name="sizeScale" value="1.0 2.5 0.0 0.0"/>
+            </effectMaterial>
+        </effectMaterials>
+
+        <customShaderDefaults>
+            <customShaderVariation name="subUV_scaleByLife_alphaMap"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+</motionPathEffects>

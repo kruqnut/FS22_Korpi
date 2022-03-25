@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<motionPathEffects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mapMotionPathEffects.xsd">
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="BLUEBERRY_FRUITS_LEAVES" filename="effects/blueberry/grape_fruitsLeaves.i3d">
+        <effectGeneration rootNode="0|0" minRot="0 -10 -10" maxRot="360 10 10" minScale="0.95 0.95 0.95" maxScale="1.05 1.05 1.05"/>
+        <typeDefinition fillTypes="BLUEBERRY" speedScale="0.1"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="2" rowLength="48" boundingBoxCenter="0 2 -1" boundingBox="6 8 8" />
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap name="shapeArray" filename="effects/blueberry/arrays/fruitArray2x48.dds"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="BLUEBERRY_FRUITS_CLEAN" filename="effects/blueberry/grape_fruitsClean.i3d">
+        <effectGeneration rootNode="0|1" minRot="0 -10 -10" maxRot="360 10 10" minScale="0.95 0.95 0.95" maxScale="1.05 1.05 1.05"/>
+        <typeDefinition fillTypes="BLUEBERRY" speedScale="0.5"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="4" rowLength="12" skipPositions="1" numVariations="2" boundingBoxCenter="0 3 -1" boundingBox="6 4 6" />
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap name="shapeArray" filename="effects/blueberry/arrays/fruitArray4x12.dds"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="BLUEBERRY_FRUITS_HARVESTED" filename="effects/blueberry/grape_fruitsHarvested.i3d">
+        <effectGeneration rootNode="0|2" minRot="0 -10 -10" maxRot="360 10 10" minScale="0.95 0.95 0.95" maxScale="1.05 1.05 1.05"/>
+        <typeDefinition fillTypes="BLUEBERRY" speedScale="0.75"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="4" rowLength="48" skipPositions="4" numVariations="2" boundingBoxCenter="0 1.5 -2.5" boundingBox="6 8 6" />
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap name="shapeArray" filename="effects/blueberry/arrays/fruitArray4x48.dds"/>
+            <customShaderVariation name="cosOffsetY"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="BLUEBERRY_THRESHING" filename="effects/blueberry/grape_threshing.i3d">
+        <effectGeneration rootNode="0|3" minRot="0 0 0" maxRot="360 360 360" minScale="0.95 0.95 0.95" maxScale="1.05 1.05 1.05"/>
+        <typeDefinition fillTypes="BLUEBERRY" speedScale="0.85"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="10" rowLength="36" skipPositions="4" numVariations="2" boundingBoxCenter="0 1.0 -4.0" boundingBox="10 10 14" />
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap       name="shapeArray" filename="effects/blueberry/arrays/threshingArray10x36.dds"/>
+            <customShaderVariation name="rotateByLife_cosOffsetY"/>
+            <customShaderParameter name="rotateSpeed"   value="15.0 0 0 0"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="GRAPE_PREPRUNER" filename="effects/blueberry/grape_prePruner.i3d">
+        <effectGeneration rootNode="0|4" minRot="0 0 0" maxRot="360 360 360" minScale="0.95 0.95 0.95" maxScale="1.05 1.05 1.05"/>
+        <typeDefinition fruitTypes="BLUEBERRY" speedScale="0.85"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="16" rowLength="16" skipPositions="2" numVariations="2" boundingBoxCenter="0 0 0" boundingBox="10 8 10" />
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap       name="shapeArray" filename="effects/blueberry/arrays/prePrunerArray16x16.dds"/>
+            <customShaderVariation name="rotateByLife_cosOffsetY"/>
+            <customShaderParameter name="rotateSpeed"   value="15.0 0 0 0"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+
+</motionPathEffects>

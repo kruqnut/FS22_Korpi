@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="14" filename="$data/fillPlanes/stone_diffuse.dds"/>
+    <File fileId="15" filename="$data/fillPlanes/stone_normal.dds"/>
+    <File fileId="5" filename="$data/placeables/lizard/sellingPoints/debrisCrusher/debrisCrusherDecals_diffuse.png"/>
+    <File fileId="1" filename="$data/placeables/lizard/sellingPoints/debrisCrusher/debrisCrusher_diffuse.png"/>
+    <File fileId="2" filename="$data/placeables/lizard/sellingPoints/debrisCrusher/debrisCrusher_normal.png"/>
+    <File fileId="3" filename="$data/placeables/lizard/sellingPoints/debrisCrusher/debrisCrusher_specular.png"/>
+    <File fileId="8" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="6" filename="$data/shared/default_normal.png"/>
+    <File fileId="7" filename="$data/shared/default_specular.png"/>
+    <File fileId="9" filename="auger_diffuse.dds"/>
+    <File fileId="10" filename="auger_normal.png"/>
+    <File fileId="12" filename="../../textures/dirt_diffuse.dds"/>
+    <File fileId="13" filename="../../textures/dirt_normal.dds"/>
+    <File fileId="16" filename="../../textures/gravel_diffuse.dds"/>
+    <File fileId="17" filename="../../textures/gravel_normal.dds"/>
+    <File fileId="18" filename="../../textures/sand_diffuse.dds"/>
+    <File fileId="19" filename="../../textures/sand_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="auger_MAT" materialId="4">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="debrisCrusher_mat" materialId="5">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="debrisCrusherDecals_mat" materialId="6" customShaderId="8">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+    </Material>
+    <Material name="default_mat" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="lambert1" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="stonePile_mat" materialId="9">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="10" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="woodChipPile_mat" materialId="11">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+    </Material>
+    <Material name="woodChipPile_mat" materialId="12">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+    </Material>
+    <Material name="woodChipPile_mat" materialId="13">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="rockCrusher.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="debrisCrusher" nodeId="34" lodDistance="0 60">
+        <Shape shapeId="1" name="LOD0" clipDistance="300" nodeId="35" materialIds="5" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="clearAreas" translation="0 -0.1 0" nodeId="36">
+            <TransformGroup name="clearArea1Start" translation="-11.6983 -2.27374e-15 -2.87895" nodeId="37">
+              <TransformGroup name="clearArea1Width" translation="0 0 8.98832" nodeId="38"/>
+              <TransformGroup name="clearArea1Height" translation="18.4743 0 0" nodeId="39"/>
+            </TransformGroup>
+            <TransformGroup name="clearArea2Start" translation="0.914693 0 -4.67535" nodeId="40">
+              <TransformGroup name="clearArea2Width" translation="0 0 12.4048" nodeId="41"/>
+              <TransformGroup name="clearArea2Height" translation="9.59601 0 1.13687e-15" nodeId="42"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="levelAreas" translation="0 -0.1 0" nodeId="43">
+            <TransformGroup name="levelArea1Start" translation="-9.5486 0 -2.48074" nodeId="44">
+              <TransformGroup name="levelArea1Width" translation="0 0 8.95273" nodeId="45"/>
+              <TransformGroup name="levelArea1Height" translation="18.3839 0 0" nodeId="46"/>
+            </TransformGroup>
+            <TransformGroup name="levelArea2Start" translation="1.22383 1.13687e-15 -4.10149" nodeId="47">
+              <TransformGroup name="levelArea2Width" translation="0 0 8.45876" nodeId="48"/>
+              <TransformGroup name="levelArea2Height" translation="8.91825 0 -1.13687e-15" nodeId="49"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="indoorAreas" translation="0 -0.1 0" nodeId="50">
+            <TransformGroup name="indoorArea1Start" translation="-9.72048 0 -2.06778" nodeId="51">
+              <TransformGroup name="indoorArea1Width" translation="0 0 8.48204" nodeId="52"/>
+              <TransformGroup name="indoorArea1Height" translation="17.2507 0 0" nodeId="53"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="testAreas" translation="0 -0.1 0" nodeId="54">
+            <TransformGroup name="testArea1Start" translation="-5.77945 0 -2.43086" nodeId="55">
+              <TransformGroup name="testArea1End" translation="12.2717 3.75596 4.76798" nodeId="56"/>
+            </TransformGroup>
+            <TransformGroup name="testArea2Start" translation="5.9724 0 -3.28966" nodeId="57">
+              <TransformGroup name="testArea2End" translation="4.24242 2.42554 6.31865" nodeId="58"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="tipOcclusionUpdateAreas" nodeId="59">
+            <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-7.1351 0 -4.4494" nodeId="60">
+              <TransformGroup name="tipOcclusionUpdateArea1End" translation="18.687 0 8.61616" nodeId="61"/>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape shapeId="2" name="infoTrigger" static="true" trigger="true" collisionMask="1048576" clipDistance="300" nodeId="62" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="collisions" nodeId="63">
+            <Shape shapeId="3" name="collision" translation="-1.66886 1.03542 0" visibility="false" static="true" clipDistance="300" nodeId="64" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="4" name="tipCollision" visibility="false" clipDistance="300" nodeId="65" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+          <TransformGroup name="sellingStation" nodeId="66">
+            <Shape shapeId="5" name="unloadTriggerUpper" translation="3.80689 2.06204 0.0280737" static="true" trigger="true" collisionMask="1073741824" clipDistance="300" nodeId="67" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="unloadTriggerUpperMarker" translation="3.84088 2.67498 0" nodeId="68"/>
+            <Shape shapeId="6" name="unloadTriggerLower" translation="8.78047 -0.4 0.0572442" static="true" trigger="true" collisionMask="1073741824" clipDistance="300" nodeId="69" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="unloadTriggerLowerAINode" translation="9.27667 0 1.34454e-16" rotation="0 180 0" nodeId="70"/>
+            <TransformGroup name="unloadTriggerLowerMarker" translation="7.9547 -0.205237 0" nodeId="71"/>
+            <TransformGroup name="loadTriggerLowerMarker" translation="-12.9989 -0.205237 0" nodeId="72"/>
+          </TransformGroup>
+          <TransformGroup name="teleportNode" translation="2.73135 0 4.43561" nodeId="73"/>
+          <TransformGroup name="visuals" nodeId="74">
+            <Shape shapeId="7" name="door2" translation="1.04708 1.60295 -1.89448" clipDistance="300" nodeId="75" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="door1" translation="1.0467 1.60576 1.96476" clipDistance="300" nodeId="76" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="9" name="decals" translation="0 -1.48451 0" clipDistance="100" nodeId="77" materialIds="6" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <TransformGroup name="backPSNode" translation="-4.65901 1.33201 0.085139" clipDistance="300" nodeId="78"/>
+            <TransformGroup name="psNode" translation="3.80742 1.87364 0.0348387" clipDistance="300" nodeId="79"/>
+            <Shape shapeId="10" name="roll" translation="3.74188 1.51398 0.0374289" clipDistance="300" nodeId="80" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="effects" nodeId="81">
+            <Shape shapeId="11" name="effectSmoke" translation="3.88442 2.0854 0.127264" rotation="-2.36171e-06 90 0" visibility="false" clipDistance="300" nodeId="82" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="12" name="LOD1" clipDistance="300" nodeId="83" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="unloading_auger" translation="-4.51742 -0.111 -34.7297" rotation="180 0 -180" nodeId="84">
+          <Shape shapeId="13" name="auger_unloading" translation="0.591255 0.134152 -34.792" rotation="-180 0 -180" scale="1.2 1.2 1.2" clipDistance="300" nodeId="85" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="14" name="pipe_collision" translation="-2.51741 3.2025 0.0272506" rotation="180 2.8945e-06 -144.699" scale="0.442275 8.24707 0.670132" static="true" clipDistance="30" nodeId="86" materialIds="10" nonRenderable="true" distanceBlending="false"/>
+            <Shape shapeId="14" name="pipe_collision" translation="-3.9311 1.31311 0.0272505" rotation="180 5.56818e-12 180" scale="0.212673 2.67418 2.33724" static="true" clipDistance="300" nodeId="87" materialIds="10" nonRenderable="true" distanceBlending="false"/>
+            <Shape shapeId="14" name="pipe_collision" translation="-3.96065 3.51958 0.0272507" rotation="180 5.56818e-12 180" scale="0.212673 2.51579 0.974009" static="true" clipDistance="300" nodeId="88" materialIds="10" nonRenderable="true" distanceBlending="false"/>
+          </Shape>
+          <TransformGroup name="unloading" translation="6.21117 0 -38.3205" nodeId="89">
+            <Shape shapeId="15" name="loadingTrigger" translation="0.603 2.06123 3.5" scale="1.901 1 2.181" static="true" trigger="true" collisionMask="1073741824" clipDistance="300" nodeId="90" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="dischargeNode" translation="0.879997 3.4728 3.5712" nodeId="91"/>
+            <TransformGroup name="aiNodeLoading" translation="5.47063e-17 0 3.75054" rotation="0 -90 0" nodeId="92"/>
+            <TransformGroup name="dischargeEffect" translation="0 3.8 0" nodeId="93">
+              <Shape shapeId="16" name="grain" translation="0.218193 3.4228 3.533" rotation="8.14222e-13 -5.08889e-13 12.7421" scale="0.8 1.6 1.2" visibility="false" clipDistance="30" nodeId="94" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="17" name="smoke" translation="0.591503 0.859429 3.62702" rotation="0 -0 -2.85401e-05" visibility="false" clipDistance="300" nodeId="95" materialIds="8" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="productionPoint" nodeId="96">
+          <Shape shapeId="18" name="playerTrigger" static="true" trigger="true" collisionMask="3145728" clipDistance="300" nodeId="97" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="playerTriggerMarker" translation="1 0 3" nodeId="98"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="storageKasat" translation="0 -0.04 0" nodeId="99">
+          <Shape shapeId="19" name="maakasa" translation="7.49605 0 -5.44525" rotation="-180 89.9011 180" scale="0.6 0.6 0.6" static="true" clipDistance="200" nodeId="100" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="19" name="stonekasa" translation="-18.2315 0 7.65308" rotation="-180 -0.201877 180" scale="0.6 0.6 0.6" static="true" clipDistance="200" nodeId="101" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="19" name="sorakasa" translation="-21.2919 0 1.34869" rotation="-180 89.9011 180" scale="0.6 0.6 0.6" static="true" clipDistance="200" nodeId="102" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="19" name="hiekkakasa" translation="-17.4381 0 -3.33624" rotation="-180 89.9011 180" scale="0.6 0.6 0.6" static="true" clipDistance="200" nodeId="103" materialIds="13" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

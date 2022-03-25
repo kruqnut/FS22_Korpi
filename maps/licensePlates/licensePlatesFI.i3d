@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="licensePlatesFR" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="2" filename="$data/shared/licensePlates/licensePlates_normal.png"/>
+    <File fileId="3" filename="$data/shared/licensePlates/licensePlates_vmask.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="licensePlatesFI_mat" materialId="4" diffuseColor="0.494118 0.392157 0.0392157 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.5 0.4 0.04 0"/>
+      <CustomParameter name="colorMat1" value="0.5 0.4 0.04 0"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="licensePlatesFI.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="rectangle" rotation="-90 0 0" nodeId="10">
+        <TransformGroup name="symbols" nodeId="11">
+          <TransformGroup name="letter1" translation="-0.154 0 0.00187975" nodeId="12"/>
+          <TransformGroup name="letter2" translation="-0.102 0 0.00187975" nodeId="13"/>
+          <TransformGroup name="letter3" translation="-0.05 0 0.002" nodeId="14"/>
+          <TransformGroup name="space" translation="-4.50976e-05 0 0.002" nodeId="15"/>
+          <TransformGroup name="letter4" translation="0.05 0 0.00187975" nodeId="16"/>
+          <TransformGroup name="letter5" translation="0.102 0 0.00187975" nodeId="17"/>
+          <TransformGroup name="letter6" translation="0.154 0 0.00187975" nodeId="18"/>
+        </TransformGroup>
+        <Shape shapeId="1" name="rectanglePlate" scale="0.8 1 1" clipDistance="300" nodeId="19" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="rectangleFrame" scale="0.8 1 1" clipDistance="300" nodeId="20" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="square" translation="0 2.01125e-09 0.2" rotation="-90 0 0" nodeId="21">
+        <TransformGroup name="symbols" nodeId="22">
+          <TransformGroup name="letter1" translation="-0.052 0.026 0.00199798" nodeId="23"/>
+          <TransformGroup name="letter2" translation="0 0.026 0.00199799" nodeId="24"/>
+          <TransformGroup name="letter3" translation="0.052 0.026 0.00199798" nodeId="25"/>
+          <TransformGroup name="space" translation="0.15 -0.036 -0.002" nodeId="26"/>
+          <TransformGroup name="letter4" translation="-0.052 -0.036 0.00199798" nodeId="27"/>
+          <TransformGroup name="letter5" translation="0 -0.036 0.002" nodeId="28"/>
+          <TransformGroup name="letter6" translation="0.052 -0.036 0.00199799" nodeId="29"/>
+        </TransformGroup>
+        <Shape shapeId="3" name="squarePlate" scale="0.8 1 1" clipDistance="300" nodeId="30" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="squareFrame" translation="0 -1.73472e-18 2.1684e-19" scale="0.8 1 1" clipDistance="300" nodeId="31" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

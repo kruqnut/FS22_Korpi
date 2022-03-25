@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="unloadMeshes_materialHolder" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/grainUnloadingShader.xml" />
+    <File fileId="6" filename="$data/shaders/grainUnloadingSmokeShader.xml" />
+    <File fileId="1" filename="$data/shared/defaultArray_diffuse.png" />
+    <File fileId="2" filename="$data/shared/defaultArray_normal.png" />
+    <File fileId="3" filename="$data/shared/defaultArray_specular.png" />
+    <File fileId="5" filename="$data/shared/default_normal.png" />
+  </Files>
+
+  <Materials>
+    <Material name="unload_mat" materialId="1" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="unloadSmoke_mat" materialId="2" specularColor="0 0 0" alphaBlending="true" customShaderId="6" shadingRate="4x4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="5"/>
+    </Material>
+    <Material name="unload_mat1" materialId="3" customShaderId="4" customShaderVariation="pipeEffect">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="unloadMeshes_materialHolder.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="unload_materialHolder" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="10" nodeId="1"/>
+    <Shape name="unloadSmoke_materialHolder" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="2"/>
+    <Shape name="unloadPipe_materialHolder" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="10" nodeId="3"/>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="1">
+      <Attribute name="materialName" type="string" value="unloading"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateBaseMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="2">
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateBaseMaterial"/>
+      <Attribute name="materialName" type="string" value="unloadingSmoke"/>
+    </UserAttribute>
+    <UserAttribute nodeId="3">
+      <Attribute name="materialName" type="string" value="pipe"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateBaseMaterial"/>
+    </UserAttribute>
+  </UserAttributes>
+</i3D>

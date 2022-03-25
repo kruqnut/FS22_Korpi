@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<additionalFiles>
+    <additionalFile filename="$data/effects/cultivator/particle/soilParticle.i3d" />
+    <additionalFile filename="$data/effects/cultivator/cultivatorMeshes_materialHolder.i3d" />
+    <additionalFile filename="$data/effects/slurry/slurryEffects_materialHolder.i3d" />
+    <additionalFile filename="$data/effects/unload/unloadMeshes_materialHolder.i3d" />
+    <additionalFile filename="$data/effects/unload/unloadParticles_materialHolder.i3d" />
+    <additionalFile filename="$data/effects/unload/unloadParticles.i3d" />
+    <additionalFile filename="$data/effects/smoke/smokeParticles.i3d" />
+    <additionalFile filename="$data/effects/smoke/smokeParticles_materialHolder.i3d" />
+    <additionalFile filename="$data/effects/wheel/wheelParticles.i3d" />
+    <additionalFile filename="$data/effects/bees/beesParticles.i3d" />
+    <additionalFile filename="$data/effects/horse/horseStepParticleSystem.i3d" />
+    <additionalFile filename="$data/effects/sprayer/particle/washer.i3d" />
+    <additionalFile filename="$data/effects/sprayer/sprayerMeshes_materialHolder.i3d" />
+    <additionalFile filename="$data/effects/leveler/levelerMeshes_materialHolder.i3d" />
+    <additionalFile filename="$data/effects/wood/particle/forestry.i3d" />
+    <additionalFile filename="$data/effects/belt/beltMeshes_materialHolder.i3d" />
+    <additionalFile filename="$data/effects/potato/particle/potato.i3d" />
+    <additionalFile filename="$data/effects/sugarBeet/particle/sugarBeet.i3d" />
+    <additionalFile filename="$data/effects/cotton/particle/cotton.i3d" />
+	<additionalFile filename="effects/carrot/particle/carrot.i3d" />
+    <additionalFile filename="effects/belt/beltMeshes_materialHolder.i3d" />
+    <additionalFile filename="effects/unload/unloadMeshes_materialHolder.i3d" />
+    <additionalFile filename="effects/unload/unloadParticles_materialHolder.i3d" />
+    <additionalFile filename="effects/unload/unloadParticles.i3d" />
+</additionalFiles>

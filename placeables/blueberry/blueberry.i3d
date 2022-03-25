@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="blueberry" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="11" filename="$data/placeables/lizard/olive/oliveLOD_alpha.png"/>
+    <File fileId="7" filename="$data/placeables/lizard/olive/oliveLOD_diffuse.png"/>
+    <File fileId="8" filename="$data/placeables/lizard/olive/oliveLOD_normal.png"/>
+    <File fileId="3" filename="$data/placeables/lizard/olive/olive_normal.png"/>
+    <File fileId="4" filename="$data/placeables/lizard/olive/olive_specular.png"/>
+    <File fileId="9" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+    <File fileId="5" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="2" filename="blueberry_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="blueberry_mat" materialId="5" customShaderId="5" customShaderVariation="wind_vertexOffset_hideUVShift_uvBasedSections">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="yOffset" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+      <CustomParameter name="hideArea" value="0 0 0 0"/>
+      <CustomParameter name="hideSectionStates" value="1 1 1 1"/>
+      <CustomParameter name="hideShiftOffset" value="0 0 0 0"/>
+    </Material>
+    <Material name="blueberry_mat1" materialId="6" customShaderId="5" customShaderVariation="wind_vertexOffset_hideUVShift_uvBasedSections_harvestShake">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="yOffset" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+      <CustomParameter name="hideArea" value="0 1 0.6107 0.9121"/>
+      <CustomParameter name="hideSectionStates" value="1 1 1 1"/>
+      <CustomParameter name="hideShiftOffset" value="-0.61 9121 0 0"/>
+      <CustomParameter name="harvestPosition" value="0 1.5 0 0"/>
+      <CustomParameter name="shakeScale" value="0.15 0 1 1.5"/>
+    </Material>
+    <Material name="blueberryLODVar1_mat" materialId="7" customShaderId="9" customShaderVariation="BILLBOARD_UV_OFFSET">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Custommap name="alphaMap" fileId="11"/>
+      <CustomParameter name="windScale" value="0 0 0 0"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+      <CustomParameter name="horizontalPosVarAtlasSizeAtlasOffset" value="0 0 0 0"/>
+      <CustomParameter name="texCoordOffsetAndScale" value="0 0 0 0"/>
+      <CustomParameter name="sizeAndSizeVariance" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.6 0 0 0"/>
+      <CustomParameter name="uvOffset" value="0 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="blueberry.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="poles" nodeId="21">
+        <TransformGroup name="pole01" nodeId="22">
+          <Shape shapeId="1" name="col" visibility="false" static="true" dynamicFriction="0" density="0.0001" nodeId="23" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="visuals" nodeId="24"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="panels" nodeId="25">
+        <TransformGroup name="panel01" nodeId="26">
+          <Shape shapeId="2" name="col" translation="-0.0113321 1.44985 -0.0272842" visibility="false" static="true" dynamicFriction="0" density="0.0001" nodeId="27" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="visuals" nodeId="28">
+            <TransformGroup name="A_noOlives" clipDistance="175" nodeId="29" lodDistance="0 25">
+              <Shape shapeId="3" name="LOD0" nodeId="30" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="LOD1" nodeId="31">
+                <Shape shapeId="4" name="LOD_A" translation="0 0 0.5" nodeId="32" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_B" translation="0 0 1.5" nodeId="33" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_C" translation="0 0 2.5" nodeId="34" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="A_greenOlives" clipDistance="175" nodeId="35" lodDistance="0 25">
+              <Shape shapeId="5" name="LOD0" nodeId="36" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="LOD1" nodeId="37">
+                <Shape shapeId="4" name="LOD_A" translation="0 0 0.5" nodeId="38" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_B" translation="0 0 1.5" nodeId="39" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_C" translation="0 0 2.5" nodeId="40" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="A_harvestReady_harvested" clipDistance="175" nodeId="41" lodDistance="0 25">
+              <Shape shapeId="6" name="LOD0" nodeId="42" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="LOD1" nodeId="43">
+                <Shape shapeId="4" name="LOD_A" translation="0 0 0.5" nodeId="44" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_B" translation="0 0 1.5" nodeId="45" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_C" translation="0 0 2.5" nodeId="46" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="panel02" nodeId="47">
+          <Shape shapeId="2" name="col" translation="-0.0113321 1.44985 -0.0272842" visibility="false" static="true" dynamicFriction="0" density="0.0001" nodeId="48" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="visuals" nodeId="49">
+            <TransformGroup name="A_noOlives" clipDistance="175" nodeId="50" lodDistance="0 25">
+              <Shape shapeId="7" name="LOD0" nodeId="51" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="LOD1" nodeId="52">
+                <Shape shapeId="4" name="LOD_A" translation="0 0 0.5" nodeId="53" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_B" translation="0 0 1.5" nodeId="54" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_C" translation="0 0 2.5" nodeId="55" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="A_greenOlives" clipDistance="175" nodeId="56" lodDistance="0 25">
+              <Shape shapeId="8" name="LOD0" nodeId="57" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="LOD1" nodeId="58">
+                <Shape shapeId="4" name="LOD_A" translation="0 0 0.5" nodeId="59" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_B" translation="0 0 1.5" nodeId="60" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_C" translation="0 0 2.5" nodeId="61" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="A_harvestReady_harvested" clipDistance="175" nodeId="62" lodDistance="0 25">
+              <Shape shapeId="9" name="LOD0" nodeId="63" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="LOD1" nodeId="64">
+                <Shape shapeId="4" name="LOD_A" translation="0 0 0.5" nodeId="65" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_B" translation="0 0 1.5" nodeId="66" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_C" translation="0 0 2.5" nodeId="67" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="panel03" nodeId="68">
+          <Shape shapeId="2" name="col" translation="-0.0113321 1.44985 -0.0272842" visibility="false" static="true" dynamicFriction="0" density="0.0001" nodeId="69" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="visuals" nodeId="70">
+            <TransformGroup name="A_noOlives" clipDistance="175" nodeId="71" lodDistance="0 25">
+              <Shape shapeId="10" name="LOD0" nodeId="72" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="LOD1" nodeId="73">
+                <Shape shapeId="4" name="LOD_A" translation="0 0 0.5" nodeId="74" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_B" translation="0 0 1.5" nodeId="75" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_C" translation="0 0 2.5" nodeId="76" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="A_greenOlives" clipDistance="175" nodeId="77" lodDistance="0 25">
+              <Shape shapeId="11" name="LOD0" nodeId="78" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="LOD1" nodeId="79">
+                <Shape shapeId="4" name="LOD_A" translation="0 0 0.5" nodeId="80" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_B" translation="0 0 1.5" nodeId="81" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_C" translation="0 0 2.5" nodeId="82" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="A_harvestReady_harvested" clipDistance="175" nodeId="83" lodDistance="0 25">
+              <Shape shapeId="12" name="LOD0" nodeId="84" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="LOD1" nodeId="85">
+                <Shape shapeId="4" name="LOD_A" translation="0 0 0.5" nodeId="86" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_B" translation="0 0 1.5" nodeId="87" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="LOD_C" translation="0 0 2.5" nodeId="88" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

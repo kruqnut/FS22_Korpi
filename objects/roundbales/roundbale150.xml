@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<bale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/bale.xsd">
+    <filename>$data/objects/roundbales/roundbale150/roundbale150.i3d</filename>
+    <size isRoundbale="true" width="1.2" diameter="1.50"/>
+    <mountableObject triggerNode="0" forceAcceleration="7" forceLimitScale="1" axisFreeY="false" axisFreeX="false"/>
+
+    <uvId>DEFAULT</uvId>
+
+    <baleMeshes>
+        <baleMesh node="1"   supportsWrapping="true" isTensionBeltMesh="true"/>
+        <baleMesh node="1|0" supportsWrapping="true" isTensionBeltMesh="false"/>
+    </baleMeshes>
+
+    <fillTypes>
+        <fillType name="grass_windrow" capacity="5500" mass="890" forceAcceleration="7" supportsWrapping="true">
+            <diffuse filename="$data/objects/roundbales/roundbale150/roundbaleGrass150_diffuse.dds"/>
+            <normal filename="$data/objects/roundbales/roundbale150/roundbale150_normal.dds"/>
+            <specular filename="$data/objects/roundbales/roundbale150/roundbale150_specular.dds"/>
+            <alpha filename="$data/objects/roundbales/roundbale150/roundbale150_alpha.dds"/>
+            <fermenting outputFillType="silage" requiresWrapping="true" time="1"/>
+        </fillType>
+        <fillType name="dryGrass_windrow" capacity="6500" mass="340" forceAcceleration="7" supportsWrapping="false">
+            <diffuse filename="$data/objects/roundbales/roundbale150/roundbaleHay150_diffuse.dds"/>
+            <normal filename="$data/objects/roundbales/roundbale150/roundbale150_normal.dds"/>
+            <specular filename="$data/objects/roundbales/roundbale150/roundbale150_specular.dds"/>
+            <alpha filename="$data/objects/roundbales/roundbale150/roundbale150_alpha.dds"/>
+        </fillType>
+        <fillType name="straw" capacity="7500" mass="320" forceAcceleration="7" supportsWrapping="false">
+            <diffuse filename="$data/objects/roundbales/roundbale150/roundbaleStraw150_diffuse.dds"/>
+            <normal filename="$data/objects/roundbales/roundbale150/roundbaleStraw150_normal.dds"/>
+            <specular filename="$data/objects/roundbales/roundbale150/roundbaleStraw150_specular.dds"/>
+            <alpha filename="$data/objects/roundbales/roundbale150/roundbale150_alpha.dds"/>
+        </fillType>
+
+        <fillType name="silage" capacity="5500" mass="890" forceAcceleration="7" supportsWrapping="false">
+            <diffuse filename="$data/objects/roundbales/roundbale150/roundbaleSilage150_diffuse.dds"/>
+            <normal filename="$data/objects/roundbales/roundbale150/roundbaleSilage150_normal.dds"/>
+            <specular filename="$data/objects/roundbales/roundbale150/roundbaleSilage150_specular.dds"/>
+            <alpha filename="$data/objects/roundbales/roundbale150/roundbaleSilage150_alpha.dds"/>
+        </fillType>
+		<fillType name="hemp_windrow" capacity="6250" mass="625" forceAcceleration="7" supportsWrapping="false">
+            <diffuse filename="$data/objects/roundbales/roundbale150/roundbaleHay150_diffuse.dds"/>
+            <normal filename="$data/objects/roundbales/roundbale150/roundbale150_normal.dds"/>
+            <specular filename="$data/objects/roundbales/roundbale150/roundbale150_specular.dds"/>
+            <alpha filename="$data/objects/roundbales/roundbale150/roundbale150_alpha.dds"/>
+        </fillType>
+		
+    </fillTypes>
+</bale>

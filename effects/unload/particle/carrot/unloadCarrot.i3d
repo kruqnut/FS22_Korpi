@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="particle_materialHolder" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.1"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="carrot_diffuse.dds"/>
+    <File fileId="4" filename="$data/shaders/psColorShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.dds"/>
+    <File fileId="3" filename="$data/shared/default_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="sugarBeet_mat" materialId="5" customShaderId="4" customShaderVariation="disableBillboard">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="psColor" value="1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="unloadCarrot.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+    <ParticleSystem name="unloadPotatoEmitter" dynamicId="2" type="sprite" particleShapeId="1" rate="0.25" lifespan="800" maxCount="1000" speed="0.002" speedRandom="0.00025" tangentSpeed="0.01" normalSpeed="1" emitterShapeVelocityScale="0.85" spriteScaleX="1.23656" spriteScaleY="0.26881" blendFactor="1" blendInFactor="0" blendOutFactor="1" randomInitRotation="true" deltaRotateMin="-0.0125" deltaRotateMax="0.0125">
+      <Gravity force="0 -1.5 0"/>
+    </ParticleSystem>
+  </Dynamics>
+
+  <Scene>
+      <Dynamic dynamicId="2" emitterShapeNodeId="13" name="unloadEmitter" clipDistance="100" nodeId="12" materialIds="5" distanceBlending="false">
+        <Shape shapeId="3" name="emitShape" nodeId="13" materialIds="4" nonRenderable="true"/>
+      </Dynamic>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="12">
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="UNLOADING"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

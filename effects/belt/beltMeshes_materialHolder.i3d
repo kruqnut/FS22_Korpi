@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="beltMeshes_materialHolder" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/grainUnloadingBeltShader.xml"/>
+    <File fileId="1" filename="$data/shared/defaultArray_diffuse.png"/>
+    <File fileId="2" filename="$data/shared/defaultArray_normal.png"/>
+    <File fileId="3" filename="$data/shared/defaultArray_specular.png"/>
+    <File fileId="6" filename="$data/shared/default_normal.dds"/>
+    <File fileId="7" filename="$data/shared/default_specular.dds"/>
+    <File fileId="5" filename="carrot/carrot_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="beltArray_mat" materialId="4" customShaderId="4" customShaderVariation="fillPlanesArray">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="morphPosition" value="0 1 1 0"/>
+      <CustomParameter name="prevMorphPosition" value="0 1 1 0"/>
+      <CustomParameter name="offsetUV" value="0 0 0 0"/>
+      <CustomParameter name="fillTypeId" value="0 0 0 0"/>
+    </Material>
+    <Material name="carrotsClean_mat" materialId="5" customShaderId="4">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+      <CustomParameter name="morphPosition" value="0 1 1 0"/>
+      <CustomParameter name="prevMorphPosition" value="0 1 1 0"/>
+      <CustomParameter name="offsetUV" value="0 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="beltMeshes_materialHolder.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="beltArray_materialHolder" clipDistance="300" nodeId="9" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="beltCarrotDirt_materialHolder" translation="6 0 0" clipDistance="300" nodeId="10" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="1" name="beltCarrotClean_materialHolder" translation="8 0 0" clipDistance="300" nodeId="11" materialIds="5" castsShadows="true" receiveShadows="true"/>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="9">
+      <Attribute name="materialName" type="string" value="belt"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateBaseMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="10">
+      <Attribute name="fillType" type="string" value="carrot"/>
+      <Attribute name="materialType" type="string" value="belt_cropDirt"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="11">
+      <Attribute name="fillType" type="string" value="carrot"/>
+      <Attribute name="materialType" type="string" value="belt_cropClean"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

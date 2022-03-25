@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="60">
+    <author>FinFarmingSim</author>
+    <version>1.0.0.2</version>
+    <title>
+        <en>Korpi</en>
+        <de>Korpi</de>
+    </title>
+    <description>
+        <en><![CDATA[Welcome in Korpimaa]]></en>
+        <de><![CDATA[Wilkommen in Korpimaa.]]></de>
+    </description>
+    <iconFilename>icon.png</iconFilename>
+    <multiplayer supported="true"/>
+	<extraSourceFiles>
+		<sourceFile filename="scripts/AddStoreCategory.lua" />		
+	</extraSourceFiles>
+	 <storeItems>
+	    <newStoreCategories>
+            <newStoreCategory type="VEHICLE" name="multiFruit" title="MultiFruit Technology" image="$data/vehicles/ropa/tiger6S/store_tiger6S.png" />
+            <newStoreCategory type="VEHICLE" name="blueberries" title="Blueberry Technology" image="$data/vehicles/newHolland/braud9090X/store_braud9090X.png" />
+			<newStoreCategory type="VEHICLE" name="hempHarvesters" title="Hemp Technology" image="$data/vehicles/caseIH/moduleExpress635/store_moduleExpress635.png" />
+        </newStoreCategories>
+		
+	</storeItems>
+    <maps>
+        <map id="SampleModMap" className="Mission00" filename="$dataS/scripts/missions/mission00.lua" configFilename="maps/map.xml" defaultVehiclesXMLFilename="maps/vehicles.xml" defaultPlaceablesXMLFilename="maps/placeables.xml" defaultGrowthXMLFilename="maps/maps_growth.xml" defaultItemsXMLFilename="maps/items.xml">
+            <title>
+                <en>Korpi</en>
+                <de>Korpi</de>
+            </title>
+            <description>
+                <en>Welcome in Korpi.</en>
+                <de>Wilkommen in Korpi.</de>
+            </description>
+            <iconFilename>preview.png</iconFilename>
+        </map>
+    </maps>
+	
+	<storeItems>
+    </storeItems>
+</modDesc>

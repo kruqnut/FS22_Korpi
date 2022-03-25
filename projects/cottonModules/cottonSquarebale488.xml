@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<bale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/bale.xsd">
+    <filename>$data/objects/cottonModules/cottonSquarebale488.i3d</filename>
+    <size isRoundbale="false" width="2.44" height="2.44" length="4.88"/>
+    <mountableObject triggerNode="0" forceAcceleration="2" forceLimitScale="1" axisFreeY="false" axisFreeX="false"/>
+
+    <uvId>DEFAULT</uvId>
+
+    <baleMeshes>
+        <baleMesh node="1" isTensionBeltMesh="true"/>
+    </baleMeshes>
+
+    <fillTypes>
+        <fillType name="cotton" capacity="20000" mass="4000">
+            <diffuse filename="$data/fillPlanes/cotton_diffuse.png"/>
+            <normal filename="$data/fillPlanes/cotton_normal.png"/>
+            <specular filename="$data/fillPlanes/cotton_specular.png"/>
+        </fillType>
+		<fillType name="hemp_windrow" capacity="20000" mass="2000">
+            <diffuse filename="$data/fillPlanes/hay_diffuse.png"/>
+            <normal filename="$data/fillPlanes/hay_normal.png"/>
+            <specular filename="$data/fillPlanes/hay_specular.png"/>
+        </fillType>
+    </fillTypes>
+</bale>

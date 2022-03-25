@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>MAAKAATOPAIKKA</name>
+        <image>$data/store/store_empty.png</image>
+        <price>1</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>604444</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>71982</indexBufferMemoryUsage>
+        <textureMemoryUsage>64</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/sellingStation1/sellingStationGeneric.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas></clearAreas>
+
+    <leveling></leveling>
+
+    <indoorAreas></indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="unloadTriggerMarker" teleportNode="teleportNodeLeft" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+    </triggerMarkers>
+
+    <sellingStation supportsExtension="false" litersForFullPriceDrop="80000" fullPriceRecoverHours="48">
+        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="aiNodeLeft" fillTypes="STONE DIRT GRAVEL SAND COPPER SALT GALENA ORE COAL" />
+		<fillType name="STONE"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+		<fillType name="DIRT"             priceScale="3" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="SAND"             priceScale="3" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="GRAVEL"           priceScale="3" supportsGreatDemand="true" disablePriceDrop="true" />
+<!-- Jookya Added mineral types -->		
+        <fillType name="COPPER"           priceScale="3" supportsGreatDemand="true" disablePriceDrop="true" />
+		<fillType name="SALT"           priceScale="3" supportsGreatDemand="true" disablePriceDrop="true" />
+	    <fillType name="GALENA"           priceScale="3" supportsGreatDemand="true" disablePriceDrop="true" />
+		<fillType name="ORE"           priceScale="3" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="COAL"           priceScale="3" supportsGreatDemand="true" disablePriceDrop="true" />
+    </sellingStation>
+
+    <animatedObjects>
+        <animatedObject saveId="gate_01" >
+            <animation duration="3">
+                <part node="cap">
+                    <keyFrame time="0.0" rotation="-99 0 0"/>
+                    <keyFrame time="1.0" rotation="0 0 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="playerTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_closeGate" negText="action_openGate" />
+        </animatedObject>
+    </animatedObjects>
+
+    <i3dMappings>
+        <i3dMapping id="cap" node="0>1" />
+        <i3dMapping id="playerTrigger" node="0>2" />
+        <i3dMapping id="unloadTrigger" node="0>3" />
+        <i3dMapping id="aiNodeLeft" node="0>5" />
+        <i3dMapping id="aiNodeRight" node="0>6" />
+        <i3dMapping id="unloadTriggerMarker" node="0>7" />
+        <i3dMapping id="teleportNodeLeft" node="0>8" />
+        <i3dMapping id="teleportNodeRight" node="0>9" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>11" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>11|0" />
+    </i3dMappings>
+</placeable>

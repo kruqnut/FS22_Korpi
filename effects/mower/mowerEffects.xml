@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<motionPathEffects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mapMotionPathEffects.xsd">
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="MOWER" filename="$data/effects/mower/mower.i3d">
+        <effectGeneration rootNode="0|0"/>
+        <typeDefinition fillTypes="GRASS_WINDROW STRAW HEMP_WINDROW" speedScale="0.85"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="6"  rowLength="11" skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+            <effectMesh node="0|0|1" numRows="9"  rowLength="11" skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+            <effectMesh node="0|0|2" numRows="9"  rowLength="18" skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+            <effectMesh node="0|0|3" numRows="10" rowLength="11" skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+            <effectMesh node="0|0|4" numRows="11" rowLength="18" skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+            <effectMesh node="0|0|5" numRows="16" rowLength="8"  skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+            <effectMesh node="0|0|6" numRows="16" rowLength="18" skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+            <effectMesh node="0|0|7" numRows="21" rowLength="18" skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+            <effectMesh node="0|0|8" numRows="30" rowLength="18" skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+        </effectMeshes>
+
+        <effectMaterials rootNode="0|1">
+            <effectMaterial node="0|1|0" fillTypes="GRASS_WINDROW HEMP_WINDROW" />
+            <effectMaterial node="0|1|1" fillTypes="STRAW" />
+        </effectMaterials>
+
+        <customShaderDefaults>
+            <customShaderVariation name="subUV_scaleByLife_alphaMap"/>
+            <customShaderParameter name="sizeScale" value="1.0 3.0 0.0 0.0"/>
+            <customShaderParameter name="subUVelements" value="8.0 4.0 1.0 1.0"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="MULCHER" filename="$data/effects/mower/mower.i3d">
+        <effectGeneration rootNode="0|0"/>
+        <typeDefinition speedScale="1.0" densityScale="0.6"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="6"  rowLength="11" skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+            <effectMesh node="0|0|1" numRows="9"  rowLength="11" skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+            <effectMesh node="0|0|2" numRows="9"  rowLength="18" skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+            <effectMesh node="0|0|3" numRows="10" rowLength="11" skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+            <effectMesh node="0|0|4" numRows="11" rowLength="18" skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+            <effectMesh node="0|0|5" numRows="16" rowLength="8"  skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+            <effectMesh node="0|0|6" numRows="16" rowLength="18" skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+            <effectMesh node="0|0|7" numRows="21" rowLength="18" skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+            <effectMesh node="0|0|8" numRows="30" rowLength="18" skipPositions="0" boundingBox="4 3 4" numVariations="4"/>
+        </effectMeshes>
+
+        <effectMaterials rootNode="0|1">
+            <effectMaterial node="0|1|2" />
+        </effectMaterials>
+
+        <customShaderDefaults>
+            <customShaderVariation name="subUV_scaleByLife_alphaMap"/>
+            <customShaderParameter name="sizeScale" value="0.25 2.25 0.0 0.0"/>
+            <customShaderParameter name="subUVelements" value="8.0 4.0 1.0 1.0"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+</motionPathEffects>

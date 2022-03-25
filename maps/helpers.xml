@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <helpers>
+        <helper name="Pekka" modelFilename="$dataS/character/humans/npc/aiHelpers/aiHelper01.xml" color="1 0 0"/>
+        <helper name="Anna" modelFilename="$dataS/character/humans/npc/aiHelpers/aiHelper02.xml" color="0 1 0"/>
+        <helper name="Laura" modelFilename="$dataS/character/humans/npc/aiHelpers/aiHelper03.xml" color="0 0 1"/>
+        <helper name="Jarkko" modelFilename="$dataS/character/humans/npc/aiHelpers/aiHelper04.xml" color="1 1 0"/>
+        <helper name="Minna" modelFilename="$dataS/character/humans/npc/aiHelpers/aiHelper05.xml" color="1 0 1"/>
+        <helper name="Jaana" modelFilename="$dataS/character/humans/npc/aiHelpers/aiHelper06.xml" color="0 1 1"/>
+        <helper name="Veikko" modelFilename="$dataS/character/humans/npc/aiHelpers/aiHelper07.xml" color="0.5 1 0.5"/>
+        <helper name="Helmi" modelFilename="$dataS/character/humans/npc/aiHelpers/aiHelper08.xml" color="0.5 0.5 1"/>
+        <helper name="Iiro" modelFilename="$dataS/character/humans/npc/aiHelpers/aiHelper09.xml" color="1 0.5 0.5"/>
+        <helper name="Sami" modelFilename="$dataS/character/humans/npc/aiHelpers/aiHelper10.xml" color="0.5 0.5 0.5"/>
+    </helpers>
+</map>

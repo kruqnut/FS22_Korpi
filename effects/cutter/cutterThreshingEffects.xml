@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<motionPathEffects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mapMotionPathEffects.xsd">
+
+    <!-- MAIZE - stage7 -->
+    <motionPathEffect effectClass="CutterMotionPathEffect" effectType="CUTTER_THRESHING" filename="$data/effects/cutter/maize/maize_threshing.i3d">
+        <effectGeneration rootNode="0|0|2"/>
+        <typeDefinition fruitTypes="MAIZE" growthStates="7" speedScale="1"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="6"  rowLength="10"  skipPositions="0" boundingBox="10 7.5 7.5"/>
+            <effectMesh node="0|0|1" numRows="12" rowLength="10"  skipPositions="0" boundingBox="16 7.5 7.5"/>
+            <effectMesh node="0|0|2" numRows="20" rowLength="10"  skipPositions="0" boundingBox="24 7.5 7.5"/>
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap        name="shapeArray" filename="$data/effects/cutter/arrays/cornheader/threshingArray12x10.dds"/>
+            <customShaderVariation  name="subUV_scaleByLife"/>
+            <customShaderParameter  name="sizeScale"        value="0.25 4.5 0 0"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+
+    <!-- SUNFLOWER - stage8 -->
+    <motionPathEffect effectClass="CutterMotionPathEffect" effectType="CUTTER_THRESHING" filename="$data/effects/cutter/sunflower/sunflower_threshing.i3d">
+        <effectGeneration rootNode="0|6|1"/>
+        <typeDefinition fruitTypes="SUNFLOWER" growthStates="8" speedScale="1"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="6"  rowLength="10" skipPositions="0" boundingBox="10 7.5 7.5"/>
+            <effectMesh node="0|0|1" numRows="12" rowLength="10" skipPositions="0" boundingBox="16 7.5 7.5"/>
+            <effectMesh node="0|0|2" numRows="20" rowLength="10" skipPositions="0" boundingBox="24 7.5 7.5"/>
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap        name="shapeArray" filename="$data/effects/cutter/arrays/cornheader/threshingArray12x10.dds"/>
+            <customShaderVariation  name="subUV_scaleByLife"/>
+            <customShaderParameter  name="sizeScale"        value="0.25 4.5 0 0"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+	
+	    <!-- CRANBERRY - stage7 -->
+    <motionPathEffect effectClass="CutterMotionPathEffect" effectType="CUTTER_THRESHING" filename="effects/cutter/cranberry/cranberry_threshing.i3d">
+        <effectGeneration rootNode="0|0|2"/>
+		<typeDefinition fruitTypes="CRANBERRY" growthStates="7" speedScale="1"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="6"  rowLength="10"  skipPositions="0" boundingBox="10 7.5 7.5"/>
+            <effectMesh node="0|0|1" numRows="12" rowLength="10"  skipPositions="0" boundingBox="16 7.5 7.5"/>
+            <effectMesh node="0|0|2" numRows="20" rowLength="10"  skipPositions="0" boundingBox="24 7.5 7.5"/>
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap        name="shapeArray" filename="$data/effects/cutter/arrays/cornheader/threshingArray12x10.dds"/>
+            <customShaderVariation  name="subUV_scaleByLife"/>
+            <customShaderParameter  name="sizeScale"        value="0.25 4.5 0 0"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+
+</motionPathEffects>

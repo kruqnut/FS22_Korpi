@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Kyläkauppa</name>
+        <image>$data/store/store_empty.png</image>
+        <price>1</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>604444</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>71982</indexBufferMemoryUsage>
+        <textureMemoryUsage>64</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/sellingStation/sellingStationGeneric.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas></clearAreas>
+
+    <leveling></leveling>
+
+    <indoorAreas></indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="unloadTriggerMarker" teleportNode="teleportNodeLeft" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+    </triggerMarkers>
+
+    <sellingStation supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
+        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="aiNodeLeft" fillTypes="BOARDS HONEY FLOUR SUGARBEET_CUT WHEAT BARLEY CANOLA OAT SUGARBEET MAIZE SOYBEAN SORGHUM SUNFLOWER POTATO EGG WOOL MILK BREAD CAKE BUTTER CHEESE FABRIC SUGAR CLOTHES CEREAL SUNFLOWER_OIL CANOLA_OIL CHOCOLATE FURNITURE STRAWBERRY LETTUCE TOMATO RYE HEMP CRANBERRY CARROT BLUEBERRY BLUECHEESECAKE BLUEMUFFIN CRANMUFFIN CARROTCAKE BLUEBERRYJUICE BERRYJUICE CRANBERRYJUICE ONION HERBS RYEFLOUR RYEBREAD" />
+        <fillType name="BOARDS"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="HONEY"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="FLOUR"              priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />       
+		<fillType name="SUGARBEET_CUT"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+	    <fillType name="WHEAT"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="BARLEY"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CANOLA"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="OAT"              priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SUGARBEET"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="MAIZE"             priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SOYBEAN"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SORGHUM"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SUNFLOWER"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SUGARBEET"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="POTATO"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="BUTTER"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CHEESE"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="FABRIC"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="EGG"             priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="WOOL"             priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="MILK"             priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SUGAR"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CLOTHES"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CEREAL"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SUNFLOWER_OIL"    priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CANOLA_OIL"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CHOCOLATE"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="FURNITURE"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="STRAWBERRY"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="LETTUCE"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="TOMATO"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="RYE"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="HEMP"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CRANBERRY"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CARROT"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="BLUEBERRY"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="BLUECHEESECAKE" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="BLUEMUFFIN" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="CRANMUFFIN" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="CARROTCAKE" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="BLUEBERRYJUICE" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="CRANBERRYJUICE" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="BERRYJUICE" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="ONION" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="HERBS" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="RYEFLOUR" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="RYEBREAD"  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+
+    </sellingStation>
+
+    <animatedObjects>
+        <animatedObject saveId="gate_01" >
+            <animation duration="3">
+                <part node="cap">
+                    <keyFrame time="0.0" rotation="-99 0 0"/>
+                    <keyFrame time="1.0" rotation="0 0 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="playerTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_closeGate" negText="action_openGate" />
+        </animatedObject>
+    </animatedObjects>
+
+    <i3dMappings>
+        <i3dMapping id="cap" node="0>1" />
+        <i3dMapping id="playerTrigger" node="0>2" />
+        <i3dMapping id="unloadTrigger" node="0>3" />
+        <i3dMapping id="aiNodeLeft" node="0>5" />
+        <i3dMapping id="aiNodeRight" node="0>6" />
+        <i3dMapping id="unloadTriggerMarker" node="0>7" />
+        <i3dMapping id="teleportNodeLeft" node="0>8" />
+        <i3dMapping id="teleportNodeRight" node="0>9" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>11" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>11|0" />
+    </i3dMappings>
+</placeable>

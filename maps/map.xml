@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map width="2048" height="2048" imageFilename="maps/overview.png"  mapFieldColor="0.1500 0.1195 0.0953" mapGrassFieldColor="0.1470 0.1441 0.0823">
+    <filename>maps/map.i3d</filename>
+    <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+    <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+    <textureMemoryUsage>0</textureMemoryUsage>
+
+    <culling xzOffset="100" />
+    <densityMap revision="1" />
+    <terrainLodTexture revision="1" />
+    <splitShapes revision="1" />
+    <tipCollision revision="1" />
+    <placementCollision revision="1" />
+    <navigationCollision revision="1" />
+
+    <shop filename="$data/store/ui/shop.xml" />
+    <storeItems filename="maps/storeItems.xml" />
+
+    <sounds filename="maps/sound.xml" />
+    <environment filename="maps/environment.xml" />
+    <growth filename="maps/maps_growth.xml" />
+    <weed filename="$data/maps/mapUS/weed.xml" />
+    <fieldGround filename="maps/fieldGround.xml" />
+    <farmlands filename="maps/farmlands.xml" />
+
+    <animals filename="$dataS/character/animals.xml">
+        <names filename="$dataS/character/animalNames.xml" />
+        <food filename="$dataS/character/animalFood.xml" />
+    </animals>
+    <wildlife filename="$dataS/character/wildlifeSpawner.xml" />
+    <npcs filename="maps/npcs.xml" />
+    <helpers filename="maps/helpers.xml" />
+
+    <missionVehicles filename="$dataS/missionVehicles.xml" />
+
+    <licensePlates filename="maps/licensePlates/licensePlatesFI.xml"/>
+
+    <helpline filename="$dataS/helpLine.xml">
+    </helpline>
+
+    <gameplayHints filename="$dataS/gameplayHints.xml" />
+
+    <hotspots>
+        <placeableHotspot type="SHOP_ANIMAL" text="$l10n_animals_dealer" worldPosition="-205.956 -113.911" teleportWorldPosition="-205.956 0.244 -113.911" />
+        <placeableHotspot type="SHOP" text="$l10n_vehicle_shop" worldPosition="-152.147 -82.591" teleportWorldPosition="-152.147 5.148 -82.591" />
+    </hotspots>
+
+    <!-- <treeTypes filename="$data/maps/mapUS/maps_treeTypes.xml" /> -->
+    <!-- <competitiveMultiplayer filename="$data/maps/mapUS/competitiveMultiplayer.xml" /> -->
+	<fillTypes filename="maps/fillTypes.xml" />
+	<densityMapHeightTypes filename="maps/densityMapHeightTypes.xml" />
+    <!-- <sprayTypes filename="$data/maps/mapUS/maps_sprayTypes.xml" /> -->
+    <fruitTypes filename="maps/fruitTypes.xml" />
+
+    <motionPathEffects filename="effects/motionPathEffects.xml"/>
+    <bales filename="maps/korpi_bales.xml"/>
+
+    <additionalFiles>
+        <additionalFile filename="$data/shared/materialHolders/tensionBeltMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/materialHolders/tireTrackMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/mapTargetMarker.i3d" />
+        <additionalFile filename="fillPlanes/fillPlane_materialHolder.i3d" />
+        <additionalFile filename="effects/effects.xml" />
+    </additionalFiles>
+
+    <!-- add all foliage layers that are not fruits. You need to define these foliage layers to be able to remove them with a cultivator or plow -->
+    <decoFoliages>
+        <decoFoliage layerName="decoFoliage" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="decoForest" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="decoBush" startChannel="0" numChannels="4" mowable="true"/>
+
+        <mapping name="grassShort" layerName="decoFoliage" state="9" />
+    </decoFoliages>
+
+    <paintableFoliages>
+        <paintableFoliage layerName="grass" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="meadow" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoBush" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoFoliage" startChannel="0" numStateChannels="4" />
+    </paintableFoliages>
+
+    <!-- paintable ground types - need to be defined in map.i3d node TerrainTransformGroup|CombinedLayer -->
+    <groundTypeMappings>
+    <!-- Base -->
+        <groundTypeMapping type="dirt"           title="$l10n_groundType_dirt" layer="DIRT" />
+    <!-- Standard -->
+        <groundTypeMapping type="asphalt"        title="$l10n_groundType_asphalt" layer="ASPHALT" />  <!-- fallback to layer concrete for placeables using "asphalt" -->
+        <groundTypeMapping type="gravel"         title="$l10n_groundType_gravel" layer="GRAVEL" />
+        <groundTypeMapping type="grass"          title="$l10n_groundType_grass" layer="GRASS" />
+        <groundTypeMapping type="animalMud"      title="$l10n_groundType_animalMud" layer="ANIMALMUD" />
+        <groundTypeMapping type="concrete"       title="$l10n_groundType_concrete" layer="CONCRETE" />
+    <!-- Special -->
+        <groundTypeMapping type="forestGround"   title="$l10n_groundType_forestGround" layer="FORESTGROUND" />
+
+	<!-- Added for Korpi	-->	
+        <groundTypeMapping type="gravelgrass"		title="Gravel Grass" layer="GRAVELGRASS" />
+        <groundTypeMapping type="graveldirt"		title="Gravel Dirt" layer="GRAVELDIRT" />
+        <groundTypeMapping type="grassdrypatchy"	title="Grass Dry Patchy" layer="GRASSDRYPATCHY" />
+        <groundTypeMapping type="pathwaygravel"		title="Gravel Pathway" layer="PATHWAYGRAVEL" />
+	<!-- Added by Jookya   -->
+		<groundTypeMapping type="graveldust"		 title="Gravel Dust" layer="GRAVELDUST" />
+		<groundTypeMapping type="riverbed" 			title="River Bed" layer="RIVERBED" />
+		<groundTypeMapping type="gravelmoss"		 title="Gravel Moss" layer="GRAVELMOSS"/>
+		<groundTypeMapping type="grassdry" 			title="Grass Dried" layer="GRASSDRY" />
+		<groundTypeMapping type="tileBrick"           title="Brick Tile" layer="BRICKS" />
+		<groundTypeMapping type="tileConcrete"           title="Concrete Tile" layer="TILECONCRETE" />
+		<groundTypeMapping type="tilecobblestone"           title="Cobblestone" layer="COBBLESTONE" />
+        <groundTypeMapping type="dirtpathway"           title="Dirt Path" layer="PATHWAY" />
+		<groundTypeMapping type="asphaltRough"           title="Rough Asphalt" layer="ASPHALTROUGH" />
+        <groundTypeMapping type="dirtdark"           title="Dirt Red" layer="DIRTDARK" />				
+        <groundTypeMapping type="forestLeaves"           title="Forest Leaves" layer="GRASSFORESTLEAVES" />		
+		<groundTypeMapping type="gravelAlpine"         title="Alpine Gravel" layer="GRAVELALPINE" />
+        <groundTypeMapping type="plate"          title="Plate" layer="PLATE" />		
+		<groundTypeMapping type="wetMud"     	 title="Wet Mud" layer="WETMUD" />
+        <groundTypeMapping type="riverMud"           title="River Mud" layer="MUDRIVER" />
+		<groundTypeMapping type="rockCliff"      title="Cliff Rock" layer="ROCKCLIFF" />
+		<groundTypeMapping type="rock"           title="Rock" layer="ROCK" />
+		<groundTypeMapping type="rockDark"		 title="Dark Rock" layer="ROCKDARK" />		
+		<groundTypeMapping type="sand"     		 title="Sand" layer="SAND" />
+		<groundTypeMapping type="coal"       	 title="Coal" layer="COAL" />
+		<groundTypeMapping type="salt"     		 title="Salt" layer="SALT" />
+		<groundTypeMapping type="ore"     		 title="Ore" layer="ORE" />
+		<groundTypeMapping type="bauxite"        title="Ore Bauxite" layer="BAUXITE" />
+		<groundTypeMapping type="copper"         title="Ore Copper" layer="COPPER" />
+		<groundTypeMapping type="galena"         title="Ore Galena" layer="GALENA" />
+        <groundTypeMapping type="blacktop"       title="Blacktop" layer="BLACKTOP" />
+
+		<groundTypeMapping type="grassAlpine"	 title="Alpine Grass" layer="GRASSALPINE" />
+		<groundTypeMapping type="cliffGrass"	 title="Grass Cliff" layer="GRASSCLIFF" />
+		<groundTypeMapping type="riverBank"	 	 title="River Bank" layer="RIVERBANK" />
+		<groundTypeMapping type="sandWet"		 title="Wet Sand" layer="SANDWET"/>
+		<groundTypeMapping type="riverStoneWater" title="River Stone Water" layer="RIVERSTONEWATER" />
+		<groundTypeMapping type="riverStoneEdge"  title="River Bank Edge" layer="RIVERSTONEEDGE" />
+		<groundTypeMapping type="wetMudder"     	 title="Wet Mud2" layer="WETMUDDER" />
+		
+<!--		
+		<groundTypeMapping type="puddle" 	   	title="Puddle" layer="PUDDLE" />
+		<groundTypeMapping type="roughDirt"       title="Rough Dirt" layer="ROUGHDIRT" />
+		<groundTypeMapping type="concreteDirt" title="Concrete Dirt" layer="CONCRETEDIRT" />
+		<groundTypeMapping type="concreteGravel" title="Concrete Gravel" layer="CONCRETEGRAVEL" />
+        <groundTypeMapping type="xblacktopv"     title="Double Yellow Vertical" layer="XBLACKTOPV" />
+        <groundTypeMapping type="xblacktoph"     title="Double Yellow Horizontal" layer="XBLACKTOPH" />
+        <groundTypeMapping type="xblacktops1"     title="White Line Left Vertical" layer="XBLACKTOPS1" />
+        <groundTypeMapping type="xblacktops2"     title="White Line Top Horizontal" layer="XBLACKTOPS2" />
+        <groundTypeMapping type="xblacktops3"     title="White Line Right Vertical" layer="XBLACKTOPS3" />
+        <groundTypeMapping type="xblacktops4"     title="White Line Bottom Horizontal" layer="XBLACKTOPS4" />
+        <groundTypeMapping type="xtrans1"     title="Dashed White Line Vertical" layer="XTRANS1" />
+        <groundTypeMapping type="xtrans2"     title="Dashed White Line Horitzontal" layer="XTRANS2" />
+        <groundTypeMapping type="xtrans3"     title="Dashed Yellow Line Vertical" layer="XTRANS3" />
+        <groundTypeMapping type="xtrans4"     title="Dashed Yellow Line Horizontal" layer="XTRANS4" />	
+	-->
+
+    </groundTypeMappings>
+
+
+</map>

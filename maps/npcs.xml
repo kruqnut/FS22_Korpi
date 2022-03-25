@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <npcs>
+        <npc name="NPC_US_01" title="Pekka Virtanen"		imageFilename="$dataS/character/humans/npc/portraits/npc_01.png" />
+        <npc name="NPC_US_02" title="Heikki Kuosmanen"		imageFilename="$dataS/character/humans/npc/portraits/npc_02.png" />
+        <npc name="NPC_US_03" title="Daniel Kolehmainen"    imageFilename="$dataS/character/humans/npc/portraits/npc_03.png" />
+        <npc name="NPC_US_04" title="Jorma Siven"			imageFilename="$dataS/character/humans/npc/portraits/npc_04.png" />
+        <npc name="NPC_US_05" title="Rami Kettunen"			imageFilename="$dataS/character/humans/npc/portraits/npc_05.png" />
+        <npc name="NPC_US_06" title="Ville Salonen"			imageFilename="$dataS/character/humans/npc/portraits/npc_06.png" />
+        <npc name="NPC_US_07" title="Essi Turunen"			imageFilename="$dataS/character/humans/npc/portraits/npc_07.png" />
+        <npc name="NPC_US_08" title="Sami Ritola"			imageFilename="$dataS/character/humans/npc/portraits/npc_08.png" />
+        <npc name="NPC_US_09" title="Anni Kolehmainen"		imageFilename="$dataS/character/humans/npc/portraits/npc_09.png" />
+        <npc name="NPC_US_10" title="Jaana Heinikäinen"		imageFilename="$dataS/character/humans/npc/portraits/npc_10.png" />
+        <npc name="NPC_US_11" title="Pertti Raunola"		imageFilename="$dataS/character/humans/npc/portraits/npc_11.png" />
+        <npc name="NPC_US_12" title="Joel Hallikainen"		imageFilename="$dataS/character/humans/npc/portraits/npc_12.png" />
+        <npc name="NPC_US_13" title="Josiah Sanford"		imageFilename="$dataS/character/humans/npc/portraits/npc_13.png" />
+        <npc name="NPC_US_14" title="Maisa Jaatinen"		imageFilename="$dataS/character/humans/npc/portraits/npc_14.png" />
+        <npc name="NPC_US_15" title="Sanna Ohisalo"			imageFilename="$dataS/character/humans/npc/portraits/npc_15.png" />
+    </npcs>
+</map>

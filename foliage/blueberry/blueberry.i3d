@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="blueberry" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/foliage/meadow/meadowDLC_alpha.png"/>
+    <File fileId="21" filename="$data/foliage/meadow/meadowDLC_cloverGrassGreenMediumLOD_alpha_H.png"/>
+    <File fileId="19" filename="$data/foliage/meadow/meadowDLC_cloverGrassGreenMediumLOD_diffuse_H.png"/>
+    <File fileId="20" filename="$data/foliage/meadow/meadowDLC_cloverGrassGreenMediumLOD_normal_H.png"/>
+    <File fileId="12" filename="$data/foliage/meadow/meadowDLC_cloverGrassGreenSmallLOD_alpha_H.png"/>
+    <File fileId="10" filename="$data/foliage/meadow/meadowDLC_cloverGrassGreenSmallLOD_diffuse_H.png"/>
+    <File fileId="11" filename="$data/foliage/meadow/meadowDLC_cloverGrassGreenSmallLOD_normal_H.png"/>
+    <File fileId="1" filename="$data/foliage/meadow/meadowDLC_diffuse.png"/>
+    <File fileId="3" filename="$data/foliage/meadow/meadowDLC_fmask.png"/>
+    <File fileId="23" filename="$data/foliage/meadow/meadowDLC_grassBlueHarvestReady2LOD_normal_H.png"/>
+    <File fileId="17" filename="$data/foliage/meadow/meadowDLC_grassCutLOD_normal_H.png"/>
+    <File fileId="18" filename="$data/foliage/meadow/meadowDLC_grassGreenMiddleLOD_alpha_H.png"/>
+    <File fileId="16" filename="$data/foliage/meadow/meadowDLC_grassGreenMiddleLOD_diffuse_H.png"/>
+    <File fileId="9" filename="$data/foliage/meadow/meadowDLC_grassGreenSmallLOD_alpha_H.png"/>
+    <File fileId="7" filename="$data/foliage/meadow/meadowDLC_grassGreenSmallLOD_diffuse_H.png"/>
+    <File fileId="8" filename="$data/foliage/meadow/meadowDLC_grassGreenSmallLOD_normal_H.png"/>
+    <File fileId="24" filename="$data/foliage/meadow/meadowDLC_grassPurpleHarvestReady2LOD_alpha_H.png"/>
+    <File fileId="22" filename="$data/foliage/meadow/meadowDLC_grassPurpleHarvestReady2LOD_diffuse_H.png"/>
+    <File fileId="2" filename="$data/foliage/meadow/meadowDLC_normal.png"/>
+    <File fileId="15" filename="$data/foliage/meadow/meadowDLC_weedOnlyHarvestReadyLOD_alpha_H.png"/>
+    <File fileId="13" filename="$data/foliage/meadow/meadowDLC_weedOnlyHarvestReadyLOD_diffuse_H.png"/>
+    <File fileId="14" filename="$data/foliage/meadow/meadowDLC_weedOnlyHarvestReadyLOD_normal_H.png"/>
+    <File fileId="4" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="meadowDLC_cloverGrassGreenMediumLOD_mat" materialId="4" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Custommap name="alphaMap" fileId="21"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+      <CustomParameter name="horizontalPosVarAtlasSizeAtlasOffset" value="0 0 0 0"/>
+      <CustomParameter name="texCoordOffsetAndScale" value="0 0 0 0"/>
+      <CustomParameter name="sizeAndSizeVariance" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.35 0 0 0"/>
+    </Material>
+    <Material name="meadowDLC_cloverGrassGreenSmallLOD_mat" materialId="5" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Custommap name="alphaMap" fileId="12"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+      <CustomParameter name="horizontalPosVarAtlasSizeAtlasOffset" value="0 0 0 0"/>
+      <CustomParameter name="texCoordOffsetAndScale" value="0 0 0 0"/>
+      <CustomParameter name="sizeAndSizeVariance" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.35 0 0 0"/>
+    </Material>
+    <Material name="meadowDLC_grassGreenMiddleLOD_mat" materialId="6" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Custommap name="alphaMap" fileId="18"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+      <CustomParameter name="horizontalPosVarAtlasSizeAtlasOffset" value="0 0 0 0"/>
+      <CustomParameter name="texCoordOffsetAndScale" value="0 0 0 0"/>
+      <CustomParameter name="sizeAndSizeVariance" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.35 0 0 0"/>
+    </Material>
+    <Material name="meadowDLC_grassGreenSmallLOD_mat" materialId="7" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Custommap name="alphaMap" fileId="9"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+      <CustomParameter name="horizontalPosVarAtlasSizeAtlasOffset" value="0 0 0 0"/>
+      <CustomParameter name="texCoordOffsetAndScale" value="0 0 0 0"/>
+      <CustomParameter name="sizeAndSizeVariance" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.35 0 0 2"/>
+    </Material>
+    <Material name="meadowDLC_grassPurpleHarvestReady2LOD_mat" materialId="8" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="22"/>
+      <Normalmap fileId="23"/>
+      <Custommap name="alphaMap" fileId="24"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+      <CustomParameter name="horizontalPosVarAtlasSizeAtlasOffset" value="0 0 0 0"/>
+      <CustomParameter name="texCoordOffsetAndScale" value="0 0 0 0"/>
+      <CustomParameter name="sizeAndSizeVariance" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.35 0 0 2"/>
+    </Material>
+    <Material name="meadowDLC_mat" materialId="9" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="alphaMap" fileId="6"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+      <CustomParameter name="horizontalPosVarAtlasSizeAtlasOffset" value="0 0 0 0"/>
+      <CustomParameter name="texCoordOffsetAndScale" value="0 0 0 0"/>
+      <CustomParameter name="sizeAndSizeVariance" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.4 0 0 0"/>
+    </Material>
+    <Material name="meadowDLC_weedOnlyHarvestReadyLOD_mat" materialId="10" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Custommap name="alphaMap" fileId="15"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+      <CustomParameter name="fadeInOutStartEnd" value="-5 0 70 75"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 1024 2 255"/>
+      <CustomParameter name="horizontalPosVarAtlasSizeAtlasOffset" value="0 0 0 0"/>
+      <CustomParameter name="texCoordOffsetAndScale" value="0 0 0 0"/>
+      <CustomParameter name="sizeAndSizeVariance" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.35 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="blueberry.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="blueberry" nodeId="24">
+        <TransformGroup name="LOD" nodeId="25">
+          <Shape shapeId="1" name="blueberryVariation01" clipDistance="500" nodeId="26" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="blueberryVariation02" clipDistance="500" nodeId="27" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="blueberryVariationWeed01" clipDistance="500" nodeId="28" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="blueberryVariationWeed02" clipDistance="500" nodeId="29" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="blueberryVariationWeed03" clipDistance="500" nodeId="30" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="blueberryVariationWeed04" clipDistance="500" nodeId="31" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="LOD1" nodeId="32">
+          <Shape shapeId="7" name="blueberryVariation01" clipDistance="500" nodeId="33" materialIds="7" receiveShadows="true"/>
+          <Shape shapeId="8" name="blueberryVariation03" clipDistance="500" nodeId="34" materialIds="5" receiveShadows="true"/>
+          <Shape shapeId="9" name="blueberryVariationWeed01" clipDistance="500" nodeId="35" materialIds="10" receiveShadows="true"/>
+          <Shape shapeId="10" name="blueberryVariationWeed02" clipDistance="500" nodeId="36" materialIds="6" receiveShadows="true"/>
+          <Shape shapeId="11" name="blueberryVariationWeed03" clipDistance="500" nodeId="37" materialIds="4" receiveShadows="true"/>
+          <Shape shapeId="12" name="blueberryVariationWeed04" clipDistance="500" nodeId="38" materialIds="8" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

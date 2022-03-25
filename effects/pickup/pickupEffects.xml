@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<motionPathEffects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mapMotionPathEffects.xsd">
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="PICKUPIN" filename="$data/effects/pickup/pickupIN.i3d">
+        <effectGeneration rootNode="0|0"/>
+        <typeDefinition fillTypes="STRAW SILAGE GRASS_WINDROW DRYGRASS_WINDROW CHAFF HEMP_WINDROW" speedScale="1.4"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="9"  rowLength="11" skipPositions="0" boundingBox="3 4 4"/>
+            <effectMesh node="0|0|1" numRows="10" rowLength="5"  skipPositions="0" boundingBox="3 4 4"/>
+            <effectMesh node="0|0|2" numRows="10" rowLength="15" skipPositions="0" boundingBox="3 4 4"/>
+            <effectMesh node="0|0|3" numRows="10" rowLength="10" skipPositions="0" boundingBox="3 4 4"/>
+            <effectMesh node="0|0|4" numRows="12" rowLength="10" skipPositions="0" boundingBox="3 4 4"/>
+            <effectMesh node="0|0|5" numRows="14" rowLength="10" skipPositions="0" boundingBox="3 4 4"/>
+            <effectMesh node="0|0|6" numRows="16" rowLength="15" skipPositions="0" boundingBox="4 4 4"/>
+        </effectMeshes>
+
+        <effectMaterials rootNode="0|1">
+            <effectMaterial node="0|1|0" fillTypes="STRAW" />
+            <effectMaterial node="0|1|1" fillTypes="SILAGE" />
+            <effectMaterial node="0|1|2" fillTypes="GRASS_WINDROW" />
+            <effectMaterial node="0|1|3" fillTypes="DRYGRASS_WINDROW HEMP_WINDROW" />
+            <effectMaterial node="0|1|4" fillTypes="CHAFF" />
+        </effectMaterials>
+
+        <customShaderDefaults>
+            <customShaderVariation name="alphaMapGradient_cosOffsetY_scaleByLife"/>
+            <customShaderParameter name="visibilityX"   value="1.5 -1.5 0.0 0.0"/>
+            <customShaderParameter name="sizeScale"     value="1.0 1.0 0.0 0.0"/>
+            <customShaderMap name="shapeArray" filename="$data/effects/pickup/sharedPickupArrayIN.dds"/>
+            <customShaderMap name="alphaMap"   filename="$data/effects/unload/gradient_diffuse.png"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="PICKUPOUT" filename="$data/effects/pickup/pickupOUT.i3d">
+        <effectGeneration rootNode="0|2"/>
+        <typeDefinition fillTypes="STRAW SILAGE GRASS_WINDROW DRYGRASS_WINDROW CHAFF HEMP_WINDROW" speedScale="0.65"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="4" rowLength="22" skipPositions="1" boundingBox="3 6 6"/>
+        </effectMeshes>
+
+        <effectMaterials rootNode="0|3">
+            <effectMaterial node="0|1|0" fillTypes="STRAW" />
+            <effectMaterial node="0|1|1" fillTypes="SILAGE" />
+            <effectMaterial node="0|1|2" fillTypes="GRASS_WINDROW" />
+            <effectMaterial node="0|1|3" fillTypes="DRYGRASS_WINDROW HEMP_WINDROW" />
+            <effectMaterial node="0|1|4" fillTypes="CHAFF" />
+        </effectMaterials>
+
+        <customShaderDefaults>
+            <customShaderVariation name="rotateByLife_cosOffsetY_alphaMapGradient"/>
+            <customShaderParameter name="rotateSpeed"   value="5.0 0 0 0"/>
+            <customShaderMap name="shapeArray" filename="$data/effects/pickup/sharedPickupArrayOUT.dds"/>
+            <customShaderMap name="alphaMap"   filename="$data/effects/unload/gradient_diffuse.png"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+</motionPathEffects>

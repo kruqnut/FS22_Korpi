@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cutterEffects" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shaders/motionPathShader.xml"/>
+    <File fileId="5" filename="../../../foliage/cranberry/cranberryStage04_alpha.dds"/>
+    <File fileId="1" filename="../../../foliage/cranberry/cranberryStage04_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="wheatStage04_mat" materialId="4" customShaderId="2" customShaderVariation="scaleByTexture_alphaMap">
+      <Texture fileId="1"/>
+      <Custommap name="alphaMap" fileId="5"/>
+      <CustomParameter name="scrollPosition" value="0.1 0 1 0"/>
+      <CustomParameter name="prevScrollPosition" value="0.1 0 1 0"/>
+      <CustomParameter name="fadeProgress" value="1 0 1 0"/>
+      <CustomParameter name="visibilityX" value="50 -50 0 0"/>
+      <CustomParameter name="visibilityY" value="50 -50 0 0"/>
+      <CustomParameter name="visibilityZ" value="50 -50 0 0"/>
+      <CustomParameter name="density" value="1 0 0 0"/>
+      <CustomParameter name="verticalOffset" value="0 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cranberry_harvestReady.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="cutterEffects_cranberry" nodeId="11">
+        <TransformGroup name="cutterEffects_cranberry_meshes" nodeId="12">
+          <Shape shapeId="1" name="cutterEffects_cranberry_nr32_rl42_v1" nodeId="13" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="cutterEffects_cranberry_nr6_rl5_v1" nodeId="14" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="cutterEffects_cranberry_nr6_rl20_v1" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="cutterEffects_cranberry_nr12_rl26_v1" nodeId="16" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="cutterEffects_cranberry_nr20_rl36_v1" nodeId="17" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="cutterEffects_cranberry_nr6_rl8_v1" nodeId="20" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="cutterEffects_cranberry_nr12_rl8_v1" nodeId="21" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="cutterEffects_cranberry_nr20_rl8_v1" nodeId="22" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

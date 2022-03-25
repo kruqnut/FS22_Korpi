@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="shaders/oceanShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="phong1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1" specularColor="1 1 1" customShaderId="2">
+      <Reflectionmap lodDistanceScaling="0.5" viewDistanceScaling="0.5" type="planar" scaling="1" refractiveIndex="1.03" bumpScale="0.1" shapesObjectMask="4294967295" lightsObjectMask="4294967295"/>
+      <Refractionmap coeff="1" bumpScale="0.1"/>
+    </Material>
+    <Material name="phong2" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1" specularColor="1 1 1" customShaderId="2">
+      <Refractionmap coeff="1" bumpScale="0.1"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="6" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="water_mat" materialId="7" diffuseColor="1 1 1 1" specularColor="1 1 1" customShaderId="2">
+      <Reflectionmap lodDistanceScaling="0.5" viewDistanceScaling="0.5" type="planar" scaling="1" refractiveIndex="1.03" bumpScale="0.1" shapesObjectMask="256" lightsObjectMask="16777216"/>
+      <Refractionmap coeff="1" bumpScale="0.1"/>
+    </Material>
+    <Material name="waterPlaneBioMassPowerPlant_mat" materialId="8" alphaBlending="true">
+    </Material>
+    <Material name="waterSimpleMirror_mat" materialId="9" diffuseColor="1 1 1 1" specularColor="1 1 1" customShaderId="2">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="water.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="water" nodeId="51">
+        <TransformGroup name="waterplanesHeigth81meters" lockedgroup="true" translation="0 81 0" nodeId="52">
+          <Shape shapeId="1" name="waterplaneCreek" translation="-700 -1.45519e-13 -400" static="true" collisionMask="2147483648" clipDistance="1000" nodeId="53" materialIds="7" receiveShadows="true"/>
+          <Shape shapeId="2" name="waterplanePond01" translation="220 -7.32422e-06 900" static="true" collisionMask="2147483648" clipDistance="500" nodeId="54" materialIds="7" receiveShadows="true"/>
+          <Shape shapeId="3" name="waterplanePond02" translation="-540 0 -460" static="true" collisionMask="2147483648" clipDistance="500" nodeId="55" materialIds="7" receiveShadows="true"/>
+          <Shape shapeId="4" name="waterplanePond03" translation="625 0 315" static="true" collisionMask="2147483648" clipDistance="500" nodeId="56" materialIds="7" receiveShadows="true"/>
+          <Shape shapeId="5" name="waterplanePond04" translation="945 0 0" static="true" collisionMask="2147483648" clipDistance="500" nodeId="57" materialIds="7" receiveShadows="true"/>
+          <TransformGroup name="waterPlanesMirror" translation="0 -81 0" nodeId="58">
+            <Shape shapeId="1" name="waterplaneCreekMirror" translation="-700 81 -400" clipDistance="1000" objectMask="32768" nodeId="59" materialIds="9" receiveShadows="true"/>
+            <Shape shapeId="2" name="waterplanePond01Mirror" translation="220 81 900" clipDistance="500" objectMask="32768" nodeId="60" materialIds="9" receiveShadows="true"/>
+            <Shape shapeId="3" name="waterplanePond02Mirror" translation="-540 81 -460" clipDistance="500" objectMask="32768" nodeId="61" materialIds="9" receiveShadows="true"/>
+            <Shape shapeId="4" name="waterplanePond03Mirror" translation="625 81 315" clipDistance="500" objectMask="32768" nodeId="62" materialIds="9" receiveShadows="true"/>
+            <Shape shapeId="5" name="waterplanePond04Mirror" translation="945 81 0" clipDistance="500" objectMask="32768" nodeId="63" materialIds="9" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="waterplanesHeigth89meters" lockedgroup="true" translation="0 89 0" nodeId="64">
+          <Shape shapeId="6" name="waterPlaneBMPP" translation="-1040 -1.01911e-05 1000" clipDistance="400" nodeId="65" materialIds="8" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="waterFallCave" lockedgroup="true" nodeId="66">
+          <TransformGroup name="waterPool" translation="447.814 62.7051 -939.342" clipDistance="300" nodeId="67">
+            <Shape shapeId="7" name="waterPool01" translation="45.8017 36.7025 -75.5825" clipDistance="150" nodeId="68" materialIds="4" receiveShadows="true"/>
+            <Shape shapeId="8" name="waterPool02" translation="-28.2869 0.210705 104.599" clipDistance="150" nodeId="69" materialIds="4" receiveShadows="true"/>
+            <Shape shapeId="9" name="waterPool03" translation="-35.5207 -4.28954 125.664" clipDistance="150" nodeId="70" materialIds="4" receiveShadows="true"/>
+            <Shape shapeId="10" name="waterPool04" translation="-52.672 -16.4878 144.535" clipDistance="150" nodeId="71" materialIds="4" receiveShadows="true"/>
+            <Shape shapeId="11" name="waterPool05" translation="-37.3855 -13.5586 142.053" clipDistance="150" nodeId="72" materialIds="4" receiveShadows="true"/>
+            <Shape shapeId="12" name="waterPool06" translation="-19.3287 -39.9691 88.3182" clipDistance="150" nodeId="73" materialIds="4" receiveShadows="true"/>
+            <Shape shapeId="13" name="waterPool07" translation="6.41729 14.1715 47.072" clipDistance="150" nodeId="74" materialIds="4" receiveShadows="true"/>
+            <Shape shapeId="14" name="waterPool08" translation="5.96811 17.4088 41.7223" clipDistance="150" nodeId="75" materialIds="4" receiveShadows="true"/>
+            <Shape shapeId="15" name="waterPool09" translation="18.9777 25.9704 25.6298" clipDistance="150" nodeId="76" materialIds="4" receiveShadows="true"/>
+            <Shape shapeId="16" name="waterPool10" translation="-34.4043 -40.6332 116.022" clipDistance="150" nodeId="77" materialIds="4" receiveShadows="true"/>
+            <Shape shapeId="17" name="waterPool11" translation="-56.2677 -32.5388 144.631" clipDistance="150" nodeId="78" materialIds="4" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="waterFall" translation="435.597 59.7096 -860.333" clipDistance="300" nodeId="79">
+            <Shape shapeId="18" name="waterFall1" translation="-33.7852 -5.79251 37.3521" visibility="false" clipDistance="150" nodeId="80" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="19" name="waterFall2" translation="-23.9924 -7.65512 48.4245" clipDistance="150" nodeId="81" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="20" name="waterFall3" translation="-17.2534 -25.0705 27.0185" clipDistance="150" nodeId="82" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="21" name="waterFall4" translation="-22.8432 0.18198 44.8864" clipDistance="150" nodeId="83" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="22" name="waterFall5" translation="-25.3197 0.591072 42.8912" clipDistance="150" nodeId="84" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="23" name="waterFall6" translation="19.8741 18.7352 -33.6555" clipDistance="150" nodeId="85" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="24" name="waterFall7" translation="-20.8275 -0.140903 46.7303" clipDistance="150" nodeId="86" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="25" name="waterFall8" translation="-26.717 -7.48407 43.635" clipDistance="150" nodeId="87" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="26" name="waterFall9" translation="-27.7645 -7.41833 43.0244" visibility="false" clipDistance="150" nodeId="88" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="27" name="waterFall10" translation="-22.0161 -7.52755 50.0932" clipDistance="150" nodeId="89" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="28" name="waterFall11" translation="-28.1689 -12.4528 61.3539" clipDistance="150" nodeId="90" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="29" name="waterFall12" translation="-21.251 -7.64667 51.832" clipDistance="150" nodeId="91" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="30" name="waterFall13" translation="-29.6067 -12.42 63.3674" clipDistance="150" nodeId="92" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="31" name="waterFall14" translation="-22.1499 -8.04249 64.0342" clipDistance="150" nodeId="93" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="32" name="waterFall15" translation="32.5657 32.941 -59.1743" clipDistance="150" nodeId="94" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="33" name="waterFall16" translation="-24.7587 2.44862 41.4408" clipDistance="150" nodeId="95" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="34" name="waterFall17" translation="-22.685 2.33071 41.6866" clipDistance="150" nodeId="96" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="35" name="waterFall18" translation="-20.8775 2.47829 41.7963" clipDistance="150" nodeId="97" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="36" name="waterFall19" translation="-19.1922 2.4308 41.8461" clipDistance="150" nodeId="98" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="37" name="waterFall20" translation="15.7996 18.7354 -34.9227" clipDistance="150" nodeId="99" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="38" name="waterFall21" translation="26.4439 23.2877 -40.3805" clipDistance="150" nodeId="100" materialIds="5" receiveShadows="true"/>
+            <Shape shapeId="39" name="waterFall22" translation="13.6936 10.5182 -21.8839" clipDistance="150" nodeId="101" materialIds="5" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="waterfallGroundCollisions" translation="432.454 61.713 -838.428" nodeId="102">
+          <Shape shapeId="40" name="waterPool02GroundCollision" rotation="0 -34 0" scale="7 1 11.125" static="true" nodeId="103" materialIds="6" nonRenderable="true" distanceBlending="false"/>
+          <Shape shapeId="40" name="waterPool10GroundCollision" translation="-19.5 -40.8 17.5" rotation="0 -34 0" scale="10.5 1 15.5" static="true" nodeId="104" materialIds="6" nonRenderable="true" distanceBlending="false"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

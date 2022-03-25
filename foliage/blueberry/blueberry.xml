@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<foliageType>
+    <!-- olive -->
+    <foliageLayer cellSize="8" objectMask="16711935" decalLayer="0" densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="1.8" shapeSource="blueberry.i3d">
+        <foliageStateDefaults distanceMapLayer="1" width="1.0" height="1.0" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.5" />
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="18" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+
+<!-- 1 & 2 : NO OLIVES -->
+        <foliageState name="No Olives" distanceMap="distance/foliage_olive_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="No Olives weed" distanceMap="distance/foliage_oliveWeed_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2" />
+                <foliageLod blockShape="0>1|2" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4" />
+                <foliageLod blockShape="0>1|4" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5" />
+                <foliageLod blockShape="0>1|5" />
+            </foliageShape>
+        </foliageState>
+
+<!-- 3 & 4 : NO OLIVES 2 -->
+        <foliageState name="No Olives 2" distanceMap="distance/foliage_olive_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="No Olives 2 weed" distanceMap="distance/foliage_oliveWeed_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2" />
+                <foliageLod blockShape="0>1|2" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4" />
+                <foliageLod blockShape="0>1|4" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5" />
+                <foliageLod blockShape="0>1|5" />
+            </foliageShape>
+        </foliageState>
+
+<!-- 5 & 6 : GREEN OLVIES -->
+        <foliageState name="Green Olives" distanceMap="distance/foliage_olive_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="Green Olives Weed" distanceMap="distance/foliage_oliveWeed_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2" />
+                <foliageLod blockShape="0>1|2" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4" />
+                <foliageLod blockShape="0>1|4" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5" />
+                <foliageLod blockShape="0>1|5" />
+            </foliageShape>
+        </foliageState>
+
+<!-- 7 & 8 : GREEN OLVIES 2 -->
+        <foliageState name="Green Olives 2" distanceMap="distance/foliage_olive_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="Green Olives 2 Weed" distanceMap="distance/foliage_oliveWeed_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2" />
+                <foliageLod blockShape="0>1|2" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4" />
+                <foliageLod blockShape="0>1|4" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5" />
+                <foliageLod blockShape="0>1|5" />
+            </foliageShape>
+        </foliageState>
+
+<!-- 9 & 10 : HARVEST READY -->
+        <foliageState name="harvest ready" distanceMap="distance/foliage_olive_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="harvest ready weed" distanceMap="distance/foliage_oliveWeed_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2" />
+                <foliageLod blockShape="0>1|2" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4" />
+                <foliageLod blockShape="0>1|4" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5" />
+                <foliageLod blockShape="0>1|5" />
+            </foliageShape>
+        </foliageState>
+
+<!-- 11 & 12 : HARVESTED -->
+        <foliageState name="harvested" distanceMap="distance/foliage_olive_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="harvested weed" distanceMap="distance/foliage_oliveWeed_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2" />
+                <foliageLod blockShape="0>1|2" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4" />
+                <foliageLod blockShape="0>1|4" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5" />
+                <foliageLod blockShape="0>1|5" />
+            </foliageShape>
+        </foliageState>
+    </foliageLayer>
+</foliageType>

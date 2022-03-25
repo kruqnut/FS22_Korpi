@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>WoodChips</name>
+        <image></image>
+        <price>1</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>1464</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>216</indexBufferMemoryUsage>
+        <textureMemoryUsage>174864</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/sellingStationWoodHeatingPlant/sellingStationWoodHeatingPlant.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas></clearAreas>
+
+    <leveling></leveling>
+
+    <indoorAreas></indoorAreas>
+
+    <hotspots>
+        <hotspot type="UNLOADING"  linkNode="hotspotNode" teleportNode="teleportNode" />
+    </hotspots>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadMarker"        filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD"           adjustToGround="true" />
+
+    </triggerMarkers>
+
+    <sellingStation>
+        <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="WOODCHIPS HEMP_WINDROW" aiNode="aiNode"/>
+
+        <unloadTrigger fillTypes="WOODCHIPS HEMP_WINDROW" aiNode="aiNode">
+            <baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="10000"/>
+        </unloadTrigger>
+
+
+    </sellingStation>
+
+    <i3dMappings>
+        <i3dMapping id="woodTrigger" node="0>0" />
+        <i3dMapping id="unloadMarker" node="0>1" />
+
+        <i3dMapping id="baleTrigger" node="0>2" />
+        <i3dMapping id="unloadTrigger" node="0>3" />
+
+        <i3dMapping id="hotspotNode" node="0>4" />
+        <i3dMapping id="teleportNode" node="0>5" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>7" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>7|0" />
+        <i3dMapping id="aiNode" node="0>8" />
+    </i3dMappings>
+</placeable>

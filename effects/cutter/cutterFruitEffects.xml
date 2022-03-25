@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<motionPathEffects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mapMotionPathEffects.xsd">
+
+    <!-- MAIZE - stage7 -->
+    <motionPathEffect effectClass="CutterMotionPathEffect" effectType="CUTTER_FRUITS" filename="$data/effects/cutter/maize/maize_fruits.i3d">
+        <effectGeneration rootNode="0|0|3" minRot="0 -10 -10" maxRot="360 10 10" minScale="0.9 0.9 0.9" maxScale="1.1 1.1 1.1"/>
+        <typeDefinition fruitTypes="MAIZE" growthStates="7" speedScale="0.3"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="6"  rowLength="18" skipPositions="1" boundingBox="10 7.5 7.5"/>
+            <effectMesh node="0|0|1" numRows="12" rowLength="28" skipPositions="1" boundingBox="16 7.5 7.5"/>
+            <effectMesh node="0|0|2" numRows="20" rowLength="38" skipPositions="1" boundingBox="24 7.5 7.5"/>
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap        name="shapeArray" filename="$data/effects/cutter/arrays/cornheader/fruitArray12x28.dds"/>
+            <customShaderVariation  name="alphaMap"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+
+    <!-- SUNFLOWER - stage8 -->
+    <motionPathEffect effectClass="CutterMotionPathEffect" effectType="CUTTER_FRUITS" filename="$data/effects/cutter/sunflower/sunflower_fruits.i3d">
+        <effectGeneration rootNode="0|6|2" minRot="0 -10 -10" maxRot="360 10 10" minScale="0.9 0.9 0.9" maxScale="1.1 1.1 1.1"/>
+        <typeDefinition fruitTypes="SUNFLOWER" growthStates="8" speedScale="0.3"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="6"  rowLength="18" skipPositions="1" boundingBox="10 7.5 7.5"/>
+            <effectMesh node="0|0|1" numRows="12" rowLength="28" skipPositions="1" boundingBox="16 7.5 7.5"/>
+            <effectMesh node="0|0|2" numRows="20" rowLength="38" skipPositions="1" boundingBox="24 7.5 7.5"/>
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap        name="shapeArray" filename="$data/effects/cutter/arrays/cornheader/fruitArray12x28.dds"/>
+            <customShaderVariation  name="alphaMap"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+    <!-- CRANBERRY - stage7 -->
+    <motionPathEffect effectClass="CutterMotionPathEffect" effectType="CUTTER_FRUITS" filename="effects/cutter/cranberry/cranberry_fruits.i3d">
+		<effectGeneration rootNode="0|0|3" minRot="0 -10 -10" maxRot="360 10 10" minScale="0.9 0.9 0.9" maxScale="1.1 1.1 1.1"/>
+        <typeDefinition fruitTypes="CRANBERRY" growthStates="7" speedScale="0.3"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="6"  rowLength="18" skipPositions="1" boundingBox="10 7.5 7.5"/>
+            <effectMesh node="0|0|1" numRows="12" rowLength="28" skipPositions="1" boundingBox="16 7.5 7.5"/>
+            <effectMesh node="0|0|2" numRows="20" rowLength="38" skipPositions="1" boundingBox="24 7.5 7.5"/>
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap        name="shapeArray" filename="$data/effects/cutter/arrays/cornheader/fruitArray12x28.dds"/>
+            <customShaderVariation  name="alphaMap"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+</motionPathEffects>
