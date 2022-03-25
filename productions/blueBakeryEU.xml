@@ -170,13 +170,13 @@
                     <output fillType="CRANMUFFIN" amount="5" />
                 </outputs>
             </production>
-			<production id="blueCheesecake" name="Blueberry Cheesecake" cyclesPerHour="8" costsPerActiveHour="2.5">
+			<production id="blueCheesecake" name="Mustikkapiirakka" cyclesPerHour="6" costsPerActiveHour="2.5">
                 <inputs>
-                    <input fillType="CHEESE"      amount="1" />
                     <input fillType="SUGAR"      amount="2" />
                     <input fillType="MILK"       amount="2" />
                     <input fillType="EGG"        amount="2" />
-                    <input fillType="BUTTER"     amount="2" />
+					<input fillType="BUTTER" amount="2" />
+                    <input fillType="RYEFLOUR"     amount="3" />
                     <input fillType="BLUEBERRY" amount="3" />
                 </inputs>
                 <outputs>
@@ -186,7 +186,7 @@
         </productions>
 
         <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="FLOUR SUGAR MILK EGG BUTTER STRAWBERRY BLUEBERRY CRANBERRY CHEESE CARROT RYEFLOUR" />
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="FLOUR SUGAR MILK EGG BUTTER STRAWBERRY BLUEBERRY CRANBERRY CARROT RYEFLOUR" />
         </sellingStation>
 
         <palletSpawner node="palletSpawner">
@@ -207,7 +207,6 @@
 			<capacity fillType="CARROT" capacity="7000" />
             <capacity fillType="BREAD"      capacity="7000" />
             <capacity fillType="CAKE"       capacity="7000" />
-            <capacity fillType="CHEESE"       capacity="5000" />
 			<capacity fillType="CARROTCAKE"       capacity="7000" />
             <capacity fillType="BLUEMUFFIN"       capacity="7000" />
 	        <capacity fillType="CRANMUFFIN"       capacity="7000" />
