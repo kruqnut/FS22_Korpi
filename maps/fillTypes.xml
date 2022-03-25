@@ -1666,7 +1666,7 @@
             <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_cake.png" />
             <pallet     filename="pallets/cranMuffinPallet.xml" />
         </fillType>
-        <fillType name="BLUECHEESECAKE" title="Blueberry Cheesecake" showOnPriceTable="true">
+        <fillType name="BLUECHEESECAKE" title="Mustikkapiirakka" showOnPriceTable="true">
             <physics massPerLiter="0.95" maxPhysicalSurfaceAngle="38" />
             <economy pricePerLiter="5">
                 <factors>
