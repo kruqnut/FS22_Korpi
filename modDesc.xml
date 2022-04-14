@@ -7,7 +7,16 @@
         <de>Korpi</de>
     </title>
     <description>
-        <en><![CDATA[Welcome to Korpimaa]]></en>
+        <en><![CDATA[Welcome to Korpi. A beautiful wilderness to start a Farm!
+Changelog 1.0.1.0
+Crops and Paintable textures added by Jookya
+-fixed some trees and other landscape problems
+-added many paintable landscape textures, over 35!
+-added crops: Rye, Blueberry, Cranberry, Carrot, Hemp
+-added production for new crops
+-Rye, Wheat, and barley are all plantable in the fall or spring, you will get better yield and earlier harvest time from winter planting. these crops have multiple stage and will give the best yield in the final harvest stage.
+-Some graphics borrowed from PV Uncharted map, check it out!
+]]></en>
         <de><![CDATA[Wilkommen in Korpimaa.]]></de>
     </description>
     <iconFilename>icon.png</iconFilename>
