@@ -1559,7 +1559,7 @@
                 </factors>
             </economy>
             <image      hud     ="hud/fillTypes/hud_fill_cranberryjuice.png" />
-            <pallet     filename="pallets/cranberryjuicePallet.xml" />
+            <pallet     filename="pallets/cranberryJuicePallet.xml" />
         </fillType>
 			<fillType name="BLUEBERRYJUICE" title="Blueberry Juice" showOnPriceTable="true">
             <physics massPerLiter="1" maxPhysicalSurfaceAngle="38" />
@@ -1580,7 +1580,7 @@
                 </factors>
             </economy>
             <image      hud     ="hud/fillTypes/hud_fill_blueberryjuice.png" />
-            <pallet     filename="pallets/blueberryjuicePallet.xml" />
+            <pallet     filename="pallets/blueberryJuicePallet.xml" />
         </fillType>
 		<fillType name="BERRYJUICE" title="MixedBerry Juice" showOnPriceTable="true">
             <physics massPerLiter="0.9" maxPhysicalSurfaceAngle="38" />
@@ -1601,7 +1601,7 @@
                 </factors>
             </economy>
             <image      hud     ="hud/fillTypes/hud_fill_berryjuice.png" />
-            <pallet     filename="pallets/berryjuicePallet.xml" />
+            <pallet     filename="pallets/berryJuicePallet.xml" />
         </fillType>
 		<fillType name="CARROTCAKE" title="Carrot Cake" showOnPriceTable="true">
             <physics massPerLiter="0.85" maxPhysicalSurfaceAngle="38" />
@@ -1708,7 +1708,7 @@
                 </factors>
             </economy>
             <effects prioritizedEffectType="ParticleEffect"/>
-            <image      hud     ="hud/fillTypes/hud_fill_hempFiber.dds" />
+            <image      hud     ="hud/fillTypes/hud_fill_hempfiber.dds" />
             <textures   diffuse ="$data/fillPlanes/hay_diffuse.png"
                         normal  ="$data/fillPlanes/hay_normal.png"
                         specular="$data/fillPlanes/hay_specular.png"
