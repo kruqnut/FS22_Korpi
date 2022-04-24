@@ -144,6 +144,9 @@
 	<storeItem xmlFilename="productions/juiceFactory.xml" />	
 	<storeItem xmlFilename="productions/hempSpinnery.xml" />
 	<storeItem xmlFilename="productions/hempSpinnery2.xml" />
+	<storeItem xmlFilename="productions/sKorpiGH.xml" />
+	<storeItem xmlFilename="productions/mKorpiGH.xml" />
+	<storeItem xmlFilename="productions/lKorpiGH.xml" />
 	<storeItem xmlFilename="pallets/blueCheesecakePallet.xml" />
 	<storeItem xmlFilename="pallets/carrotCakePallet.xml" />
 	<storeItem xmlFilename="pallets/cranMuffinPallet.xml" />
@@ -153,5 +156,6 @@
 	<storeItem xmlFilename="pallets/cranberryJuicePallet.xml" />
 	<storeItem xmlFilename="pallets/ryeBreadBoxPallet.xml" />
 	<storeItem xmlFilename="pallets/ryeFlourPallet.xml" />
+	<storeItem xmlFilename="pallets/onionBoxPallet.xml" />
 	
 </storeItems>

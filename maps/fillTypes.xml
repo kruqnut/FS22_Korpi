@@ -1405,59 +1405,6 @@
                         specular="fillPlanes/cranberry_specular.png"
                         distance="foliage/cranberry/distance/foliage_cranberry_distance4_diffuse.png" />
         </fillType>
-<!-- ADD LATER		
-		<fillType name="ONION" title="Onion" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
-            <physics massPerLiter="0.75" maxPhysicalSurfaceAngle="34" />
-            <economy pricePerLiter="0.172">
-                <factors>
-                    <factor period="1"  value="1.12" />
-                    <factor period="2"  value="1.04" />
-                    <factor period="3"  value="0.93" />
-                    <factor period="4"  value="0.85" />
-                    <factor period="5"  value="0.79" />
-                    <factor period="6"  value="0.79" />
-                    <factor period="7"  value="0.86" />
-                    <factor period="8"  value="0.96" />
-                    <factor period="9"  value="1.08" />
-                    <factor period="10" value="1.16" />
-                    <factor period="11" value="1.22" />
-                    <factor period="12" value="1.21" />
-                </factors>
-            </economy>
-            <effects prioritizedEffectType="ParticleEffect"/>
-            <image      hud     ="hud/fillTypes/hud_fill_onion.png" />
-            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
-            <textures   diffuse ="fillPlanes/onion_diffuse.png"
-                        normal  ="fillPlanes/oat_normal.png"
-                        specular="fillPlanes/oat_specular.png"
-                        distance="$data/fillPlanes/distance/oatDistance_diffuse.png" /> 
-        </fillType>	
-		
-		<fillType name="CUCUMBER" title="Cucumber" showOnPriceTable="true">
-            <physics massPerLiter="0.35" maxPhysicalSurfaceAngle="38" />
-            <economy pricePerLiter="0.99">
-                <factors>
-                    <factor period="1"  value="1.05" />
-                    <factor period="2"  value="1.04" />
-                    <factor period="3"  value="1.00" />
-                    <factor period="4"  value="0.99" />
-                    <factor period="5"  value="0.94" />
-                    <factor period="6"  value="0.99" />
-                    <factor period="7"  value="0.92" />
-                    <factor period="8"  value="0.90" />
-                    <factor period="9"  value="0.98" />
-                    <factor period="10" value="1.01" />
-                    <factor period="11" value="1.08" />
-                    <factor period="12" value="1.13" />
-                </factors>
-            </economy>
-            <image      hud     ="hud/fillTypes/hud_fill_cucumber.png" />
-            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
-            <textures   diffuse ="fillPlanes/cucumber_diffuse.png"
-                        normal  ="$data/fillPlanes/lime_normal.png"
-                        specular="$data/fillPlanes/lime_specular.png"
-                        distance="$data/fillPlanes/distance/oatDistance_diffuse.png" />
-        </fillType>	-->
 
 		<fillType name="BLUEBERRY" title="Blueberry" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
             <physics massPerLiter="0.60" maxPhysicalSurfaceAngle="15" />
@@ -1485,7 +1432,53 @@
                         specular="$data/fillPlanes/grape_specular.png"
                         distance="fillPlanes/distance/blueberry_diffuse.png" />
         </fillType>
-
+        <fillType name="GRAPE" title="$l10n_fillType_grape" showOnPriceTable="true" achievementName="DeliveryGrapes" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.60" maxPhysicalSurfaceAngle="15" />
+            <economy pricePerLiter="0.603">
+                <factors>
+                    <factor period="1"  value="1.05" />
+                    <factor period="2"  value="1.08" />
+                    <factor period="3"  value="1.20" />
+                    <factor period="4"  value="1.10" />
+                    <factor period="5"  value="1.03" />
+                    <factor period="6"  value="0.93" />
+                    <factor period="7"  value="0.87" />
+                    <factor period="8"  value="0.75" />
+                    <factor period="9"  value="0.84" />
+                    <factor period="10" value="0.88" />
+                    <factor period="11" value="0.95" />
+                    <factor period="12" value="0.99" />
+                </factors>
+            </economy>
+            <effects fruitSmokeColor="0.3006 0.1651 0.0630 1.0000"/>
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_grape.png" />
+            <pallet     filename="$data/objects/pallets/grapePallet/grapePallet.xml" />
+            <textures   diffuse ="$data/fillPlanes/grape_diffuse.png"
+                        normal  ="$data/fillPlanes/grape_normal.png"
+                        specular="$data/fillPlanes/grape_specular.png"
+                        distance="$data/fillPlanes/distance/grapeDistance_diffuse.png" />
+        </fillType>
+		<fillType name="ONION" title="$l10n_fillType_db06" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
+			<physics massPerLiter="0.75" maxPhysicalSurfaceAngle="34" />
+			<economy pricePerLiter="0.250">
+				<factors>
+					<factor period="1"  value="1.12" />
+					<factor period="2"  value="1.04" />
+					<factor period="3"  value="0.93" />
+					<factor period="4"  value="0.85" />
+					<factor period="5"  value="0.79" />
+					<factor period="6"  value="0.79" />
+					<factor period="7"  value="0.86" />
+					<factor period="8"  value="0.96" />
+					<factor period="9"  value="1.08" />
+					<factor period="10" value="1.16" />
+					<factor period="11" value="1.22" />
+					<factor period="12" value="1.21" />
+				</factors>
+			</economy>
+			<image      hud     ="hud/hud_fill_onion.dds" />
+			<pallet     filename="pallets/onionBoxPallet.xml" />
+		</fillType>
 		<fillType name="SALT" title="Salt" showOnPriceTable="true" achievementName="DeliveryStones" unitShort="$l10n_unit_literShort">
             <physics massPerLiter="1.4" maxPhysicalSurfaceAngle="35" />
             <economy pricePerLiter="0.07" />
@@ -1686,6 +1679,49 @@
             </economy>
             <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_cake.png" />
             <pallet     filename="pallets/blueCheesecakePallet.xml" />
+        </fillType>
+		
+        <fillType name="RAISINS" title="$l10n_fillType_raisins" showOnPriceTable="true">
+            <physics massPerLiter="0.64" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="1.4">
+                <factors>
+                    <factor period="1"  value="1.08" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="1.05" />
+                    <factor period="4"  value="0.97" />
+                    <factor period="5"  value="0.94" />
+                    <factor period="6"  value="0.99" />
+                    <factor period="7"  value="1.10" />
+                    <factor period="8"  value="1.11" />
+                    <factor period="9"  value="1.06" />
+                    <factor period="10" value="0.95" />
+                    <factor period="11" value="0.91" />
+                    <factor period="12" value="0.99" />
+                </factors>
+            </economy>
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_raisins.png" />
+            <pallet     filename="$data/objects/pallets/raisinBoxPallet/raisinBoxPallet.xml" />
+        </fillType>
+        <fillType name="GRAPEJUICE" title="$l10n_fillType_grapeJuice" showOnPriceTable="true">
+            <physics massPerLiter="1" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="1.6">
+                <factors>
+                    <factor period="1"  value="1.02" />
+                    <factor period="2"  value="1.04" />
+                    <factor period="3"  value="1.05" />
+                    <factor period="4"  value="0.99" />
+                    <factor period="5"  value="0.94" />
+                    <factor period="6"  value="0.99" />
+                    <factor period="7"  value="1.02" />
+                    <factor period="8"  value="1.05" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.01" />
+                    <factor period="11" value="0.96" />
+                    <factor period="12" value="1.12" />
+                </factors>
+            </economy>
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_grapeJuice.png" />
+            <pallet     filename="$data/objects/pallets/grapeJuicePallet/grapeJuicePallet.xml" />
         </fillType>
 		
 	
@@ -1891,8 +1927,8 @@
     </fillTypes>
 
     <fillTypeCategories>
-        <fillTypeCategory name="BULK" >DIRT GRAVEL SAND WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARBEET_CUT MANURE SEEDS FORAGE FORAGE_MIXING CHAFF WOODCHIPS SILAGE STRAW GRASS_WINDROW DRYGRASS_WINDROW FERTILIZER PIGFOOD LIME SNOW ROADSALT SORGHUM OLIVE STONE MINERAL_FEED RYE HEMP CRANBERRY BLUEBERRY CARROT GALENA COPPER ORE SALT COAL HEMP_WINDROW</fillTypeCategory>
-        <fillTypeCategory name="LIQUID" >MILK WATER DIESEL DEF</fillTypeCategory>
+        <fillTypeCategory name="BULK" >DIRT GRAVEL SAND WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARBEET_CUT MANURE SEEDS FORAGE FORAGE_MIXING CHAFF WOODCHIPS SILAGE STRAW GRASS_WINDROW DRYGRASS_WINDROW FERTILIZER PIGFOOD LIME SNOW ROADSALT SORGHUM OLIVE STONE MINERAL_FEED RYE HEMP CRANBERRY BLUEBERRY CARROT GALENA COPPER ORE SALT COAL HEMP_WINDROW GRAPE ONION</fillTypeCategory>
+        <fillTypeCategory name="LIQUID" >MILK WATER DIESEL DEF BLUEBERRYJUICE CRANBERRYJUICE BERRYJUICE GRAPEJUICE SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL</fillTypeCategory>
         <fillTypeCategory name="PIECE" >WOOL TREESAPLINGS EGG</fillTypeCategory>
         <fillTypeCategory name="WINDROW" >STRAW DRYGRASS_WINDROW GRASS_WINDROW HEMP_WINDROW</fillTypeCategory>
         <fillTypeCategory name="COMBINE" >WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SORGHUM RYE HEMP CRANBERRY</fillTypeCategory>
@@ -1962,7 +1998,7 @@
             <sound template="manureFill"/>
         </fillTypeSound>
 
-        <fillTypeSound fillTypes="POTATO SUGARBEET CARROT"><!-- onion-->
+        <fillTypeSound fillTypes="POTATO SUGARBEET CARROT ONION">
             <sound template="potatoFill"/>
         </fillTypeSound>
 
@@ -1982,7 +2018,7 @@
             <sound template="ROCKS_UNLOAD"/>
         </fillTypeSound>
 
-        <fillTypeSound fillTypes="MILK WATER DIESEL DEF LIQUIDFERTILIZER HERBICIDE LIQUIDMANURE DIGESTATE SILAGE_ADDITIVE">
+        <fillTypeSound fillTypes="MILK WATER DIESEL DEF LIQUIDFERTILIZER HERBICIDE LIQUIDMANURE DIGESTATE SILAGE_ADDITIVE SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL BLUEBERRYJUICE CRANBERRYJUICE BERRYJUICE GRAPEJUICE">
             <sound template="DEFAULT_REFUEL_SOUND"/>
         </fillTypeSound>
     </fillTypeSounds>

@@ -49,7 +49,7 @@
     </triggerMarkers>
 
     <sellingStation supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
-        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="aiNodeLeft" fillTypes="BOARDS HONEY FLOUR SUGARBEET_CUT WHEAT BARLEY CANOLA OAT SUGARBEET MAIZE SOYBEAN SORGHUM SUNFLOWER POTATO EGG WOOL MILK BREAD CAKE BUTTER CHEESE FABRIC SUGAR CLOTHES CEREAL SUNFLOWER_OIL CANOLA_OIL CHOCOLATE FURNITURE STRAWBERRY LETTUCE TOMATO RYE HEMP CRANBERRY CARROT BLUEBERRY BLUECHEESECAKE BLUEMUFFIN CRANMUFFIN CARROTCAKE BLUEBERRYJUICE BERRYJUICE CRANBERRYJUICE ONION HERBS RYEFLOUR RYEBREAD" />
+        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="aiNodeLeft" fillTypes="BOARDS HONEY FLOUR SUGARBEET_CUT WHEAT BARLEY CANOLA OAT SUGARBEET MAIZE SOYBEAN SORGHUM SUNFLOWER POTATO EGG WOOL MILK BREAD CAKE BUTTER CHEESE FABRIC SUGAR CLOTHES CEREAL SUNFLOWER_OIL CANOLA_OIL CHOCOLATE FURNITURE STRAWBERRY LETTUCE TOMATO RYE HEMP CRANBERRY CARROT BLUEBERRY BLUECHEESECAKE BLUEMUFFIN CRANMUFFIN CARROTCAKE BLUEBERRYJUICE BERRYJUICE CRANBERRYJUICE ONION HERBS RYEFLOUR RYEBREAD GRAPE GRAPEJUICE RAISINS" />
         <fillType name="BOARDS"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="HONEY"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="FLOUR"              priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />       
@@ -97,6 +97,10 @@
 		<fillType name="HERBS" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="RYEFLOUR" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 		<fillType name="RYEBREAD"  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="GRAPE" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="GRAPEJUICE" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+		<fillType name="RAISINS"  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+
 
     </sellingStation>
 

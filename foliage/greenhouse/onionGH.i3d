@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="onionGH" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="13" filename="$data/placeables/lizard/greenhouses/tomatoes/tomatoesStage01_alpha.png" />
+    <File fileId="10" filename="$data/placeables/lizard/greenhouses/tomatoes/tomatoesStage01_diffuse.png" />
+    <File fileId="12" filename="$data/placeables/lizard/greenhouses/tomatoes/tomatoesStage01_fmask.png" />
+    <File fileId="11" filename="$data/placeables/lizard/greenhouses/tomatoes/tomatoesStage01_normal.png" />
+    <File fileId="9" filename="$data/placeables/lizard/greenhouses/tomatoes/tomatoesStage02_alpha.png" />
+    <File fileId="6" filename="$data/placeables/lizard/greenhouses/tomatoes/tomatoesStage02_diffuse.png" />
+    <File fileId="8" filename="$data/placeables/lizard/greenhouses/tomatoes/tomatoesStage02_fmask.png" />
+    <File fileId="7" filename="$data/placeables/lizard/greenhouses/tomatoes/tomatoesStage02_normal.png" />
+    <File fileId="5" filename="$data/placeables/lizard/greenhouses/tomatoes/tomatoesStage03_alpha.png" />
+    <File fileId="1" filename="$data/placeables/lizard/greenhouses/tomatoes/tomatoesStage03_diffuse.png" />
+    <File fileId="3" filename="$data/placeables/lizard/greenhouses/tomatoes/tomatoesStage03_fmask.png" />
+    <File fileId="2" filename="$data/placeables/lizard/greenhouses/tomatoes/tomatoesStage03_normal.png" />
+    <File fileId="4" filename="$data/shaders/fruitGrowthFoliageShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="tomatoesStage03_mat" materialId="3" customShaderId="4">
+      <CustomParameter name="windScale" value="0"/>
+      <CustomParameter name="snowScale" value="0"/>
+      <Custommap name="alphaMap" fileId="5"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="tomatoesStage02_mat" materialId="2" customShaderId="4">
+      <CustomParameter name="windScale" value="0"/>
+      <CustomParameter name="snowScale" value="0"/>
+      <Custommap name="alphaMap" fileId="9"/>
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="tomatoesStage01_mat" materialId="1" customShaderId="4">
+      <CustomParameter name="windScale" value="0"/>
+      <CustomParameter name="snowScale" value="0"/>
+      <Custommap name="alphaMap" fileId="13"/>
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="onionGH.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="lod0" nodeId="1">
+      <Shape name="greenSmall" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="150" nodeId="2"/>
+      <Shape name="greenBig" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="150" nodeId="3"/>
+      <Shape name="dead" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="150" nodeId="4"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

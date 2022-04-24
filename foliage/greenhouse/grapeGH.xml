@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<greenhousePlant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/greenhousePlant.xsd">
+    <i3dFilename>foliage/greenhouse/grapeGH.i3d</i3dFilename>
+
+    <stages>
+        <growing node="0|0"/>
+        <growing node="0|1"/>
+        <withered node="0|2"/>
+    </stages>
+
+</greenhousePlant>
