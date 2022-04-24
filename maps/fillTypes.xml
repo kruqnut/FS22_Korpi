@@ -1458,7 +1458,7 @@
                         specular="$data/fillPlanes/grape_specular.png"
                         distance="$data/fillPlanes/distance/grapeDistance_diffuse.png" />
         </fillType>
-		<fillType name="ONION" title="$l10n_fillType_db06" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
+		<fillType name="ONION" title="Onion" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
 			<physics massPerLiter="0.75" maxPhysicalSurfaceAngle="34" />
 			<economy pricePerLiter="0.250">
 				<factors>
@@ -1476,7 +1476,7 @@
 					<factor period="12" value="1.21" />
 				</factors>
 			</economy>
-			<image      hud     ="hud/hud_fill_onion.dds" />
+			<image      hud     ="hud/fillTypes/hud_fill_onion.dds" />
 			<pallet     filename="pallets/onionBoxPallet.xml" />
 		</fillType>
 		<fillType name="SALT" title="Salt" showOnPriceTable="true" achievementName="DeliveryStones" unitShort="$l10n_unit_literShort">
