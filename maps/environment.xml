@@ -376,6 +376,19 @@
                 </globalCoverage>
                 <cirrusCoverage weight="0.2"/>
             </cloudPreset>
+			<!-- STORM 1 -->
+		    <cloudPreset id="STORM_1" envMapCloudProbeIndex="3">
+                <cloudType type="8" precipitation="1.97"  cloudBaseShapeTiling="2300" cloudErosionTiling="1800"/>
+                <scatteringLightSourceDamping damping="0.95"/>
+                <globalCoverage>
+                    <combinedNoise edge0="0" edge1="1"/>
+                    <noise0 weight="0.343146" edge0="0.2" edge1="1"/>
+                    <noise1 weight="0.247782" edge0="0.09" edge1="0.9"/>
+                    <noise2 weight="0.409072" edge0="0.39" edge1="1"/>
+                    <erosionWeight weight="0.13"/>
+                </globalCoverage>
+                <cirrusCoverage weight="0.25"/>
+            </cloudPreset>
          </cloudPresets>
         
 		<!-- FINLAND WEATHER AND TEMPERATURES BY Agame78 ver. 1.6 -->
@@ -697,8 +710,8 @@
                     <wind angle="270" speed="14.4" cirrusSpeedFactor="2.88" />
                 </variation> 
 			    <variation weight="2" minHours="3" maxHours="6" minTemperature="-2" maxTemperature="3">
-                    <clouds presetId="RAIN_4" />
-                    <rain dropScale="2.4" />
+                    <clouds presetId="STORM_1" />
+                    <rain dropScale="1.75" />
                     <wind angle="270" speed="68" cirrusSpeedFactor="7.4" />
                 </variation>   
             </object>

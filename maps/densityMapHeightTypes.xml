@@ -73,7 +73,7 @@
         <densityMapHeightType fillTypeName="TARP" maxSurfaceAngle="40" fillToGroundScale="1.0" allowsSmoothing="false">
             <collision scale="1.00" baseOffset="0.0" minOffset="0.0" maxOffset="0.0" />
         </densityMapHeightType>
-        <densityMapHeightType fillTypeName="SNOW" maxSurfaceAngle="38" fillToGroundScale="2.0" allowsSmoothing="false">
+        <densityMapHeightType fillTypeName="SNOW" maxSurfaceAngle="38" fillToGroundScale="3.0" allowsSmoothing="false">
             <collision scale="0.80" baseOffset="0.1" minOffset="0.1" maxOffset="0.9" />
         </densityMapHeightType>
         <densityMapHeightType fillTypeName="ROADSALT" maxSurfaceAngle="32" fillToGroundScale="1.0" allowsSmoothing="false">
