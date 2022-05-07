@@ -61,13 +61,14 @@
 				    <update range="2-3" add="1" />
 				</period>
 <!--huhti-->	<period index="2" plantingAllowed="true"> 
-					<update range="1" add="2" />
+					<update range="1" add="1" />
 					<update range="3-4" add="1" />
 				</period>
 <!--touko-->	<period index="3">
-				    <update range="3-5" add="1" />
+				    <update range="2-5" add="1" />
 				</period>
 <!--kesä-->		<period index="4" >
+					<update range="3" add="2" />
 				    <update range="4-6" add="1" />
 				 </period>
 <!--heina-->	<period index="5">
@@ -80,8 +81,7 @@
 				    <update range="1-6" add="1" />
 					<update range="8" add="1"/>
 				 </period>
-<!--loka-->		<period index="8">
-					<update range="1-2" add="1" /> 
+<!--loka-->		<period index="8"> 
 				    <update range="7-8" set="9" />
 				</period>
 <!--marras-->	<period index="9">
