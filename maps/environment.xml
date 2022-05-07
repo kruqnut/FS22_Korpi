@@ -376,8 +376,8 @@
                 </globalCoverage>
                 <cirrusCoverage weight="0.2"/>
             </cloudPreset>
-			<!-- STORM 1 -->
-		    <cloudPreset id="STORM_1" envMapCloudProbeIndex="3">
+			<!--STORM_1-->
+			<cloudPreset id="STORM_1" envMapCloudProbeIndex="3">
                 <cloudType type="8" precipitation="1.97"  cloudBaseShapeTiling="2300" cloudErosionTiling="1800"/>
                 <scatteringLightSourceDamping damping="0.95"/>
                 <globalCoverage>
@@ -394,7 +394,7 @@
 		<!-- FINLAND WEATHER AND TEMPERATURES BY Agame78 ver. 1.6 -->
 		
         <season name="spring">
-            <object typeName="SUN" class="WeatherObject" weight="52">
+            <object typeName="SUN" class="WeatherObject" weight="45">
                 <variation weight="12" minHours="4" maxHours="6" minTemperature="12" maxTemperature="16">
                     <clouds presetId="SUNNY_BLUE_SKY" />
                     <wind angle="191" speed="3.6" cirrusSpeedFactor="0.72" />	<!-- speed in km/h, cirrusSpeedFactor = speed/5 (looks normal at 5x gamespeed) -->
@@ -416,7 +416,7 @@
                 </variation>
             </object>        
         
-            <object typeName="CLOUDY" class="WeatherObject" weight="19">
+            <object typeName="CLOUDY" class="WeatherObject" weight="20">
                 <variation weight="4" minHours="4" maxHours="6" minTemperature="7" maxTemperature="11">
                     <clouds presetId="CLOUDY_LIGHT" />
                     <wind angle="157" speed="14.4" cirrusSpeedFactor="2.88" />
@@ -438,7 +438,7 @@
                 </variation>
             </object>
 
-            <object typeName="RAIN" class="WeatherObjectRain" weight="23">
+            <object typeName="RAIN" class="WeatherObjectRain" weight="20">
                 <rain filename="$data/sky/rain.i3d" />
 
                 <variation weight="7" minHours="1" maxHours="3" minTemperature="6" maxTemperature="10">
@@ -466,10 +466,10 @@
                 </variation>
             </object>
 			
-			<object typeName="SNOW" class="WeatherObjectRain" weight="6">	<!-- ADDED CHANCE OF SNOWING -->
+			<object typeName="SNOW" class="WeatherObjectRain" weight="15">	<!-- ADDED CHANCE OF SNOWING -->
                 <rain filename="$data/sky/snow.i3d" />
                 
-                <variation weight="6" minHours="1" maxHours="2" minTemperature="-3" maxTemperature="3">
+                <variation weight="6" minHours="1" maxHours="1" minTemperature="-2" maxTemperature="0">
                     <clouds presetId="RAIN_2" />
                     <rain dropScale="0.8" />
                     <wind angle="270" speed="10.8" cirrusSpeedFactor="2.16" />
@@ -553,7 +553,7 @@
         </season>
 
         <season name="autumn">
-            <object typeName="SUN" class="WeatherObject" weight="39">
+            <object typeName="SUN" class="WeatherObject" weight="35">
                 <variation weight="8" minHours="4" maxHours="6" minTemperature="17" maxTemperature="21">
                     <clouds presetId="SUNNY_BLUE_SKY" />
                     <wind angle="190" speed="10.8" cirrusSpeedFactor="2.16" />
@@ -575,7 +575,7 @@
                 </variation>
             </object>    
             
-            <object typeName="CLOUDY" class="WeatherObject" weight="28">
+            <object typeName="CLOUDY" class="WeatherObject" weight="30">
                 <variation weight="7" minHours="8" maxHours="10" minTemperature="12" maxTemperature="16">
                     <clouds presetId="CLOUDY_LIGHT" />
                     <wind angle="226" speed="14.4" cirrusSpeedFactor="2.88" />
@@ -597,7 +597,7 @@
                 </variation>
             </object>
 
-            <object typeName="RAIN" class="WeatherObjectRain" weight="27">
+            <object typeName="RAIN" class="WeatherObjectRain" weight="25">
                 <rain filename="$data/sky/rain.i3d" />
 
                 <variation weight="5" minHours="4" maxHours="8" minTemperature="8" maxTemperature="12">
@@ -626,10 +626,10 @@
                 
             </object>
 			
-			<object typeName="SNOW" class="WeatherObjectRain" weight="6">	<!-- ADDED CHANCE OF SNOWING -->
+			<object typeName="SNOW" class="WeatherObjectRain" weight="10">	<!-- ADDED CHANCE OF SNOWING -->
                 <rain filename="$data/sky/snow.i3d" />
                 
-                <variation weight="6" minHours="2" maxHours="4" minTemperature="-5" maxTemperature="3">
+                <variation weight="6" minHours="1" maxHours="2" minTemperature="-4" maxTemperature="0">
                     <clouds presetId="RAIN_3" />
                     <rain dropScale="0.5" />
                     <wind angle="270" speed="7.2" cirrusSpeedFactor="1.44" />
@@ -639,81 +639,81 @@
         </season>
 
         <season name="winter">
-            <object typeName="SUN" class="WeatherObject" weight="29">
-                <variation weight="8" minHours="4" maxHours="6" minTemperature="-24" maxTemperature="-12">
+            <object typeName="SUN" class="WeatherObject" weight="20">
+                <variation weight="8" minHours="4" maxHours="6" minTemperature="-24" maxTemperature="-16">
                     <clouds presetId="SUNNY_BLUE_SKY" />
                     <wind angle="1" speed="7.2" cirrusSpeedFactor="1.44" />
                 </variation>
 
-                <variation weight="5" minHours="4" maxHours="6" minTemperature="-28" maxTemperature="-16">
+                <variation weight="5" minHours="4" maxHours="6" minTemperature="-28" maxTemperature="-20">
                     <clouds presetId="SUNNY_LIGHT_CLOUDS_1" />
                     <wind angle="44" speed="14.4" cirrusSpeedFactor="2.88" />
                 </variation>
 
-                <variation weight="5" minHours="4" maxHours="6" minTemperature="-32" maxTemperature="-20">
+                <variation weight="5" minHours="4" maxHours="6" minTemperature="-32" maxTemperature="-24">
                     <clouds presetId="SUNNY_LIGHT_CLOUDS_2" />
                     <wind angle="316" speed="25.2" cirrusSpeedFactor="5.04" />
                 </variation>                
                 
-                <variation weight="11" minHours="4" maxHours="6" minTemperature="-20" maxTemperature="-8">
+                <variation weight="11" minHours="4" maxHours="6" minTemperature="-20" maxTemperature="-12">
                     <clouds presetId="SUNNY_LIGHT_CLOUDS_3" />
                     <wind angle="270" speed="18.0" cirrusSpeedFactor="3.60" />
                 </variation>
             </object>    
             
-            <object typeName="CLOUDY" class="WeatherObject" weight="38">
-                <variation weight="8" minHours="4" maxHours="6" minTemperature="-18" maxTemperature="-10">
+            <object typeName="CLOUDY" class="WeatherObject" weight="40">
+                <variation weight="8" minHours="4" maxHours="6" minTemperature="-28" maxTemperature="-28">
                     <clouds presetId="CLOUDY_LIGHT" />
                     <wind angle="10" speed="25.2" cirrusSpeedFactor="5.04" />
                 </variation>
 
-                <variation weight="10" minHours="4" maxHours="6" minTemperature="-6" maxTemperature="-2">
+                <variation weight="10" minHours="4" maxHours="6" minTemperature="-16" maxTemperature="-12">
                     <clouds presetId="CLOUDY" />
                     <wind angle="90" speed="14.4" cirrusSpeedFactor="2.88" />
                 </variation>
                 
-                <variation weight="10" minHours="4" maxHours="6" minTemperature="-8" maxTemperature="0">
+                <variation weight="10" minHours="4" maxHours="6" minTemperature="-18" maxTemperature="-10">
                     <clouds presetId="CLOUDY_MEDIUM" />
                     <wind angle="266" speed="10.8" cirrusSpeedFactor="2.16" />
                 </variation>  
                 
-                <variation weight="10" minHours="4" maxHours="6" minTemperature="-6" maxTemperature="2">
+                <variation weight="10" minHours="4" maxHours="6" minTemperature="-16" maxTemperature="-8">
                     <clouds presetId="CLOUDY_DENSE" />
                     <wind angle="270" speed="10.8" cirrusSpeedFactor="2.16" />
                 </variation>
             </object>
 
-            <object typeName="SNOW" class="WeatherObjectRain" weight="33">
+            <object typeName="SNOW" class="WeatherObjectRain" weight="40">
                 <rain filename="$data/sky/snow.i3d" />
                 
-                <variation weight="7" minHours="3" maxHours="6" minTemperature="-7" maxTemperature="-3">
+                <variation weight="8" minHours="2" maxHours="6" minTemperature="-7" maxTemperature="-4">
                     <clouds presetId="RAIN_1" />
                     <rain dropScale="0.2" />
                     <wind angle="258" speed="25.2" cirrusSpeedFactor="5.04" />
                 </variation>
                 
-                <variation weight="8" minHours="3" maxHours="6" minTemperature="-6" maxTemperature="-2">
+                <variation weight="10" minHours="2" maxHours="4" minTemperature="-6" maxTemperature="-3">
                     <clouds presetId="RAIN_2" />
                     <rain dropScale="0.5" />
                     <wind angle="44" speed="18.0" cirrusSpeedFactor="3.60" />
                 </variation>
                 
-                <variation weight="10" minHours="3" maxHours="6" minTemperature="-5" maxTemperature="-1">
+                <variation weight="12" minHours="2" maxHours="4" minTemperature="-5" maxTemperature="-2">
                     <clouds presetId="RAIN_3" />
                     <rain dropScale="1" />
                     <wind angle="249" speed="7.2" cirrusSpeedFactor="1.44" />
                 </variation>
                 
-                <variation weight="8" minHours="3" maxHours="6" minTemperature="0" maxTemperature="3">
+                <variation weight="10" minHours="2" maxHours="4" minTemperature="-2" maxTemperature="-1">
                     <clouds presetId="RAIN_4" />
                     <rain dropScale="1.4" />
                     <wind angle="270" speed="14.4" cirrusSpeedFactor="2.88" />
                 </variation> 
-			    <variation weight="2" minHours="3" maxHours="6" minTemperature="-2" maxTemperature="3">
+			    <variation weight="2" minHours="1" maxHours="3" minTemperature="-2" maxTemperature="3">
                     <clouds presetId="STORM_1" />
                     <rain dropScale="1.75" />
-                    <wind angle="270" speed="68" cirrusSpeedFactor="7.4" />
-                </variation>   
+                    <wind angle="270" speed="40" cirrusSpeedFactor="7.4" />
+                </variation> 				
             </object>
 			
         </season>
