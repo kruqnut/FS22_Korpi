@@ -1761,7 +1761,7 @@
             <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_squareBaleHay.png" />
         </fillType>
 		<fillType name="RYEFLOUR" title="Rye Flour" showOnPriceTable="true">
-            <physics massPerLiter="0.17" maxPhysicalSurfaceAngle="38" />
+            <physics massPerLiter="0.25" maxPhysicalSurfaceAngle="38" />
             <economy pricePerLiter="0.6">
                 <factors>
                     <factor period="1"  value="1.00" />
@@ -1782,7 +1782,7 @@
             <pallet     filename="pallets/ryeFlourPallet.xml" />
         </fillType>
 		<fillType name="RYEBREAD" title="Sourdough Rye Bread" showOnPriceTable="true">
-            <physics massPerLiter="0.25" maxPhysicalSurfaceAngle="38" />
+            <physics massPerLiter="0.17" maxPhysicalSurfaceAngle="38" />
             <economy pricePerLiter="1.75">
                 <factors>
                     <factor period="1"  value="1.00" />
