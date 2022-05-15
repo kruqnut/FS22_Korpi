@@ -1322,9 +1322,9 @@
             <image      hud     ="hud/fillTypes/hud_fill_rye.png" />
             <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
             <textures   diffuse ="fillPlanes/rye_diffuse.png"
-                        normal  ="fillPlanes/oat_normal.png"
-                        specular="fillPlanes/oat_specular.png"
-                        distance="$data/fillPlanes/distance/oatDistance_diffuse.png" />
+                        normal  ="$data/maps/textures/shared/wheatBottom_normal.dds"
+                        specular="$data/fillPlanes/wheat_specular.dds"
+                        distance="$data/fillPlanes/distance/wheatDistance_diffuse.png" />
         </fillType>  
 		
 		<fillType name="CARROT" title="Carrot" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
@@ -1349,9 +1349,9 @@
             <image      hud     ="hud/fillTypes/hud_fill_carrot.png" />
             <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
             <textures   diffuse ="fillPlanes/carrot_diffuse.png"
-                        normal  ="fillPlanes/oat_normal.png"
-                        specular="fillPlanes/oat_specular.png"
-                        distance="$data/fillPlanes/distance/oatDistance_diffuse.png" /> 
+                        normal  ="$data/fillPlanes/sugarBeets_normal.png"
+                        specular="$data/fillPlanes/sugarBeets_specular.png"
+                        distance="$data/fillPlanes/distance/sugarBeetsDistance_diffuse.png" /> 
         </fillType>
 		
 		<fillType name="HEMP" title="Hemp" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
@@ -1376,7 +1376,7 @@
             <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
             <textures   diffuse ="fillPlanes/hemp_diffuse.png"
                         normal  ="fillPlanes/hemp_normal.png"
-                        specular="fillPlanes/oat_specular.png"
+                        specular="$data/fillPlanes/oat_specular.png"
                         distance="fillPlanes/hempDistance_diffuse.png" />
         </fillType>
 		
@@ -1430,7 +1430,7 @@
             <textures   diffuse ="fillPlanes/blueberry_diffuse.png"
                         normal  ="$data/fillPlanes/grape_normal.png"
                         specular="$data/fillPlanes/grape_specular.png"
-                        distance="fillPlanes/distance/blueberry_diffuse.png" />
+                        distance="$data/fillPlanes/distance/grapeDistance_diffuse.png" />
         </fillType>
         <fillType name="GRAPE" title="$l10n_fillType_grape" showOnPriceTable="true" achievementName="DeliveryGrapes" unitShort="$l10n_unit_literShort">
             <physics massPerLiter="0.60" maxPhysicalSurfaceAngle="15" />
@@ -1484,7 +1484,7 @@
             <economy pricePerLiter="0.07" />
             <image      hud     ="hud/fillTypes/hud_fill_salt.png" />
             <textures   diffuse ="fillPlanes/salt_diffuse.dds"
-                        normal  ="fillPlanes/lime_normal.dds"
+                        normal  ="$data/fillPlanes/lime_normal.dds"
                         specular="$data/fillPlanes/lime_specular.png"
                         distance="$data/fillPlanes/distance/limeDistance_diffuse.png" />
         </fillType>

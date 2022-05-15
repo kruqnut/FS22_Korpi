@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <storeItems>
 
-	<storeItem		xmlFilename="maps/placeables/sellingStation/sellingStationMainGrainSilo.xml" />
-	<storeItem		xmlFilename="maps/placeables/sellingStation1/sellingStationMainGrainSilo.xml" />
-	<storeItem		xmlFilename="maps/placeables/sellingStationBales/sellingStationBales.xml" />
-	<storeItem		xmlFilename="maps/placeables/sawmill/sawmill.xml" />
-	<storeItem      xmlFilename="maps/placeables/gasStation/gasStation.xml" />
-	<storeItem      xmlFilename="maps/placeables/sellingStationWoodHeatingPlant/sellingStationWoodHeatingPlant.xml" />
-	<storeItem      xmlFilename="maps/placeables/rockCrusher/rockCrusher.xml" />
 
 
 
@@ -44,7 +37,7 @@
 
     <!-- vehicles buy/selling/repairing -->
     <storeItem xmlFilename="$data/placeables/mapUS/gasStation/gasStation.xml"  />
-    <storeItem xmlFilename="maps/placeables/sellingStationVehicles/sellingStationVehicles.xml"  />
+
 
     <!-- water & lime -->
     <storeItem xmlFilename="$data/placeables/mapUS/waterFillTriggers/waterFillTriggers.xml"  />
@@ -69,20 +62,7 @@
 
 
 <!-- TREES -->
-    <!--storeItem xmlFilename="$data/maps/trees/americanElm/americanElm_stage01.xml" />
-    <storeItem xmlFilename="$data/maps/trees/americanElm/americanElm_stage02.xml" />
-    <storeItem xmlFilename="$data/maps/trees/americanElm/americanElm_stage03.xml" />
-    <storeItem xmlFilename="$data/maps/trees/americanElm/americanElm_stage04.xml" />
-    <storeItem xmlFilename="$data/maps/trees/downeyServiceBerry/downeyServiceBerry_stage01.xml" />
-    <storeItem xmlFilename="$data/maps/trees/downeyServiceBerry/downeyServiceBerry_stage02.xml" />
-    <storeItem xmlFilename="$data/maps/trees/downeyServiceBerry/downeyServiceBerry_stage03.xml" />
-    <storeItem xmlFilename="$data/maps/trees/pagodaDogwood/pagodaDogwood_stage01.xml" />
-    <storeItem xmlFilename="$data/maps/trees/pagodaDogwood/pagodaDogwood_stage02.xml" />
-    <storeItem xmlFilename="$data/maps/trees/pagodaDogwood/pagodaDogwood_stage03.xml" />
-    <storeItem xmlFilename="$data/maps/trees/shagbarkHickory/shagbarkHickory_stage01.xml" />
-    <storeItem xmlFilename="$data/maps/trees/shagbarkHickory/shagbarkHickory_stage02.xml" />
-    <storeItem xmlFilename="$data/maps/trees/shagbarkHickory/shagbarkHickory_stage03.xml" />
-    <storeItem xmlFilename="$data/maps/trees/shagbarkHickory/shagbarkHickory_stage04.xml" /-->
+
     <storeItem xmlFilename="$data/maps/trees/birch/birch_stage01.xml" />
     <storeItem xmlFilename="$data/maps/trees/birch/birch_stage02.xml" />
     <storeItem xmlFilename="$data/maps/trees/birch/birch_stage03.xml" />
@@ -91,8 +71,6 @@
     <storeItem xmlFilename="$data/maps/trees/oak/oak_stage01.xml" />
     <storeItem xmlFilename="$data/maps/trees/oak/oak_stage02.xml" />
     <storeItem xmlFilename="$data/maps/trees/oak/oak_stage03.xml" />
-    <!--storeItem xmlFilename="$data/maps/trees/willow/willow_type01.xml" />
-    <storeItem xmlFilename="$data/maps/trees/willow/willow_type02.xml" /-->
     <storeItem xmlFilename="$data/maps/trees/pine/pine_stage01.xml" />
     <storeItem xmlFilename="$data/maps/trees/pine/pine_stage02.xml" />
     <storeItem xmlFilename="$data/maps/trees/pine/pine_stage03.xml" />
@@ -102,12 +80,7 @@
 	
 	<!-- LISÄTTYJÄ MUISTA KARTOISTA -->
 <!-- TREES FR-->
-    <!--storeItem xmlFilename="$data/maps/trees/stonePine/stonePine_stage01.xml" />
-    <storeItem xmlFilename="$data/maps/trees/stonePine/stonePine_stage02.xml" />
-    <storeItem xmlFilename="$data/maps/trees/stonePine/stonePine_stage03.xml" />
-    <storeItem xmlFilename="$data/maps/trees/poplar/poplar_stage01.xml" />
-    <storeItem xmlFilename="$data/maps/trees/poplar/poplar_stage02.xml" />
-    <storeItem xmlFilename="$data/maps/trees/poplar/poplar_stage03.xml" /-->
+
     <storeItem xmlFilename="$data/maps/trees/spruce/spruceVar1_stage01.xml" />
     <storeItem xmlFilename="$data/maps/trees/spruce/spruceVar1_stage02.xml" />
     <storeItem xmlFilename="$data/maps/trees/spruce/spruceVar1_stage03.xml" />
@@ -127,35 +100,29 @@
     <storeItem xmlFilename="$data/foliage/decoFoliage/decoFoliageDLC_daisy.xml" />
     <storeItem xmlFilename="$data/foliage/decoFoliage/decoFoliageDLC_daisyYellow.xml" />
 
-<!-- ADDED PRODUCTION AND CROP VEHICLES-->
-	<storeItem xmlFilename="placeables/blueberry/blueberry.xml" />
-	<storeItem xmlFilename="placeables/blueberry/blueberrySingleton.xml" />
-	<storeItem xmlFilename="vehicles/braud9090X.xml" />
-<!--	<storeItem xmlFilename="vehicles/moduleExpress420.xml" /> -->
-	<storeItem xmlFilename="vehicles/rr6x45_carrot.xml" />
-	<storeItem xmlFilename="vehicles/rr6x45_potato.xml" />
-	<storeItem xmlFilename="vehicles/panther2.xml" />	
-	<storeItem xmlFilename="vehicles/tiger6S.xml" />
-	<storeItem xmlFilename="vehicles/rrXL9_sugarbeet.xml" />
-	<storeItem xmlFilename="vehicles/rrXL9_potato.xml" />
-	<storeItem xmlFilename="vehicles/rrXL9_carrot.xml" />
-	<storeItem xmlFilename="productions/blueBakeryEU.xml" />
-	<storeItem xmlFilename="productions/grainMillRye.xml" />
-	<storeItem xmlFilename="productions/juiceFactory.xml" />	
-	<storeItem xmlFilename="productions/hempSpinnery.xml" />
-	<storeItem xmlFilename="productions/hempSpinnery2.xml" />
-	<storeItem xmlFilename="productions/sKorpiGH.xml" />
-	<storeItem xmlFilename="productions/mKorpiGH.xml" />
-	<storeItem xmlFilename="productions/lKorpiGH.xml" />
-	<storeItem xmlFilename="pallets/blueCheesecakePallet.xml" />
-	<storeItem xmlFilename="pallets/carrotCakePallet.xml" />
-	<storeItem xmlFilename="pallets/cranMuffinPallet.xml" />
-	<storeItem xmlFilename="pallets/blueMuffinPallet.xml" />
-	<storeItem xmlFilename="pallets/blueberryJuicePallet.xml" />
-	<storeItem xmlFilename="pallets/berryJuicePallet.xml" />
-	<storeItem xmlFilename="pallets/cranberryJuicePallet.xml" />
-	<storeItem xmlFilename="pallets/ryeBreadBoxPallet.xml" />
-	<storeItem xmlFilename="pallets/ryeFlourPallet.xml" />
-	<storeItem xmlFilename="pallets/onionBoxPallet.xml" />
+
+	    <storeItem xmlFilename="$data/maps/trees/americanElm/americanElm_stage01.xml" />
+    <storeItem xmlFilename="$data/maps/trees/americanElm/americanElm_stage02.xml" />
+    <storeItem xmlFilename="$data/maps/trees/americanElm/americanElm_stage03.xml" />
+    <storeItem xmlFilename="$data/maps/trees/americanElm/americanElm_stage04.xml" />
+    <storeItem xmlFilename="$data/maps/trees/downeyServiceBerry/downeyServiceBerry_stage01.xml" />
+    <storeItem xmlFilename="$data/maps/trees/downeyServiceBerry/downeyServiceBerry_stage02.xml" />
+    <storeItem xmlFilename="$data/maps/trees/downeyServiceBerry/downeyServiceBerry_stage03.xml" />
+    <storeItem xmlFilename="$data/maps/trees/pagodaDogwood/pagodaDogwood_stage01.xml" />
+    <storeItem xmlFilename="$data/maps/trees/pagodaDogwood/pagodaDogwood_stage02.xml" />
+    <storeItem xmlFilename="$data/maps/trees/pagodaDogwood/pagodaDogwood_stage03.xml" />
+    <storeItem xmlFilename="$data/maps/trees/shagbarkHickory/shagbarkHickory_stage01.xml" />
+    <storeItem xmlFilename="$data/maps/trees/shagbarkHickory/shagbarkHickory_stage02.xml" />
+    <storeItem xmlFilename="$data/maps/trees/shagbarkHickory/shagbarkHickory_stage03.xml" />
+    <storeItem xmlFilename="$data/maps/trees/shagbarkHickory/shagbarkHickory_stage04.xml" />
+	    <storeItem xmlFilename="$data/maps/trees/stonePine/stonePine_stage01.xml" />
+    <storeItem xmlFilename="$data/maps/trees/stonePine/stonePine_stage02.xml" />
+    <storeItem xmlFilename="$data/maps/trees/stonePine/stonePine_stage03.xml" />
+    <storeItem xmlFilename="$data/maps/trees/poplar/poplar_stage01.xml" />
+    <storeItem xmlFilename="$data/maps/trees/poplar/poplar_stage02.xml" />
+    <storeItem xmlFilename="$data/maps/trees/poplar/poplar_stage03.xml" />
+	
+    <storeItem xmlFilename="$data/maps/trees/willow/willow_type01.xml" />
+    <storeItem xmlFilename="$data/maps/trees/willow/willow_type02.xml" />
 	
 </storeItems>

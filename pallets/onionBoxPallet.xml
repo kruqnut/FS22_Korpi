@@ -20,7 +20,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_pallet</typeDesc>
-        <filename>products/onion/onionBoxPallet.i3d</filename>
+        <filename>pallets/onionBoxPallet.i3d</filename>
         <size width="1.4" length="1" height="1.5" />
         <canBeReset>false</canBeReset>
         <components maxMass="4000">

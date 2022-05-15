@@ -9,7 +9,7 @@
         </effectMeshes>
 
         <customShaderDefaults>
-            <customShaderMap name="shapeArray" filename="effects/blueberry/arrays/fruitArray2x48.dds"/>
+            <customShaderMap name="shapeArray" filename="$data/effects/grape/arrays/fruitArray2x48.dds"/>
         </customShaderDefaults>
     </motionPathEffect>
 
@@ -22,7 +22,7 @@
         </effectMeshes>
 
         <customShaderDefaults>
-            <customShaderMap name="shapeArray" filename="effects/blueberry/arrays/fruitArray4x12.dds"/>
+            <customShaderMap name="shapeArray" filename="$data/effects/grape/arrays/fruitArray4x12.dds"/>
         </customShaderDefaults>
     </motionPathEffect>
 
@@ -35,7 +35,7 @@
         </effectMeshes>
 
         <customShaderDefaults>
-            <customShaderMap name="shapeArray" filename="effects/blueberry/arrays/fruitArray4x48.dds"/>
+            <customShaderMap name="shapeArray" filename="$data/effects/grape/arrays/fruitArray4x48.dds"/>
             <customShaderVariation name="cosOffsetY"/>
         </customShaderDefaults>
     </motionPathEffect>
@@ -49,7 +49,7 @@
         </effectMeshes>
 
         <customShaderDefaults>
-            <customShaderMap       name="shapeArray" filename="effects/blueberry/arrays/threshingArray10x36.dds"/>
+            <customShaderMap       name="shapeArray" filename="$data/effects/grape/arrays/threshingArray10x36.dds"/>
             <customShaderVariation name="rotateByLife_cosOffsetY"/>
             <customShaderParameter name="rotateSpeed"   value="15.0 0 0 0"/>
         </customShaderDefaults>
@@ -64,7 +64,7 @@
         </effectMeshes>
 
         <customShaderDefaults>
-            <customShaderMap       name="shapeArray" filename="effects/blueberry/arrays/prePrunerArray16x16.dds"/>
+            <customShaderMap       name="shapeArray" filename="$data/effects/grape/arrays/prePrunerArray16x16.dds"/>
             <customShaderVariation name="rotateByLife_cosOffsetY"/>
             <customShaderParameter name="rotateSpeed"   value="15.0 0 0 0"/>
         </customShaderDefaults>

@@ -6,7 +6,7 @@
   </Asset>
 
   <Files>
-    <File fileId="5" filename="gradient_diffuse.png"/>
+    <File fileId="5" filename="$data/effects/unload/gradient_diffuse.dds"/>
     <File fileId="1" filename="$data/shared/defaultArray_diffuse.png"/>
     <File fileId="2" filename="$data/shared/defaultArray_normal.png"/>
     <File fileId="3" filename="$data/shared/defaultArray_specular.png"/>

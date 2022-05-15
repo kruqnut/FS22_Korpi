@@ -101,6 +101,7 @@
         <additionalFile filename="$data/shared/mapTargetMarker.i3d" />
         <additionalFile filename="fillPlanes/fillPlane_materialHolder.i3d" />
         <additionalFile filename="effects/effects.xml" />
+
     </additionalFiles>
 
     <!-- add all foliage layers that are not fruits. You need to define these foliage layers to be able to remove them with a cultivator or plow -->
@@ -147,7 +148,7 @@
 		<groundTypeMapping type="tilecobblestone"           title="Cobblestone" layer="COBBLESTONE" />
         <groundTypeMapping type="dirtpathway"           title="Dirt Path" layer="PATHWAY" />
 		<groundTypeMapping type="asphaltRough"           title="Rough Asphalt" layer="ASPHALTROUGH" />
-        <groundTypeMapping type="dirtdark"           title="Dirt Red" layer="DIRTDARK" />				
+        <groundTypeMapping type="dirtDark"           title="Dirt Red" layer="DIRTDARK" />				
         <groundTypeMapping type="forestLeaves"           title="Forest Leaves" layer="GRASSFORESTLEAVES" />		
 		<groundTypeMapping type="gravelAlpine"         title="Alpine Gravel" layer="GRAVELALPINE" />
         <groundTypeMapping type="plate"          title="Plate" layer="PLATE" />		

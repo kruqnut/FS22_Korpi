@@ -6,7 +6,7 @@
   </Asset>
 
   <Files>
-    <File fileId="2" filename="shaders/oceanShader.xml"/>
+    <File fileId="2" filename="$data/shaders/oceanShader.xml"/>
   </Files>
 
 

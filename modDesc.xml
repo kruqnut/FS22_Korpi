@@ -1,14 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="60">
+<modDesc descVersion="65">
     <author>FinFarmingSim</author>
-    <version>1.0.3.2</version>
+    <version>1.0.3.4</version>
     <title>
         <en>Korpi</en>
         <de>Korpi</de>
     </title>
     <description>
         <en><![CDATA[Welcome to Korpi. A beautiful wilderness to start a Farm!
-Changelog 1.0.1.0
+Changelog 1.0.3.4
+Added grapes back in
+fixed various bugs with previous update
+
+
 Crops and Paintable textures added by Jookya
 -fixed some trees and other landscape problems
 -added many paintable landscape textures, over 35!
@@ -31,6 +35,45 @@ Crops and Paintable textures added by Jookya
 			<newStoreCategory type="VEHICLE" name="hempHarvesters" title="Hemp Technology" image="$data/vehicles/caseIH/moduleExpress635/store_moduleExpress635.png" />
         </newStoreCategories>
 		
+		<storeItem		xmlFilename="maps/placeables/sellingStation/sellingStationMainGrainSilo.xml" />
+		<storeItem		xmlFilename="maps/placeables/sellingStation1/sellingStationMainGrainSilo.xml" />
+		<storeItem		xmlFilename="maps/placeables/sellingStationBales/sellingStationBales.xml" />
+		<storeItem		xmlFilename="maps/placeables/sawmill/sawmill.xml" />
+		<storeItem      xmlFilename="maps/placeables/gasStation/gasStation.xml" />
+		<storeItem      xmlFilename="maps/placeables/sellingStationWoodHeatingPlant/sellingStationWoodHeatingPlant.xml" />
+		<storeItem      xmlFilename="maps/placeables/rockCrusher/rockCrusher.xml" />
+		<storeItem xmlFilename="maps/placeables/sellingStationVehicles/sellingStationVehicles.xml"  />
+		
+		<!-- ADDED PRODUCTION AND CROP VEHICLES-->
+		<storeItem xmlFilename="placeables/blueberry/blueberry.xml" />
+		<storeItem xmlFilename="placeables/blueberry/blueberrySingleton.xml" />
+		<storeItem xmlFilename="vehicles/braud9090X.xml" />
+		<!--	<storeItem xmlFilename="vehicles/moduleExpress420.xml" /> -->
+		<storeItem xmlFilename="vehicles/rr6x45_carrot.xml" />
+		<storeItem xmlFilename="vehicles/rr6x45_potato.xml" />
+		<storeItem xmlFilename="vehicles/panther2.xml" />	
+		<storeItem xmlFilename="vehicles/tiger6S.xml" />
+		<storeItem xmlFilename="vehicles/rrXL9_sugarbeet.xml" />
+		<storeItem xmlFilename="vehicles/rrXL9_potato.xml" />
+		<storeItem xmlFilename="vehicles/rrXL9_carrot.xml" />
+		<storeItem xmlFilename="productions/blueBakeryEU.xml" />
+		<storeItem xmlFilename="productions/grainMillRye.xml" />
+		<storeItem xmlFilename="productions/juiceFactory.xml" />	
+		<storeItem xmlFilename="productions/hempSpinnery.xml" />
+		<storeItem xmlFilename="productions/hempSpinnery2.xml" />
+		<storeItem xmlFilename="productions/sKorpiGH.xml" />
+		<storeItem xmlFilename="productions/mKorpiGH.xml" />
+		<storeItem xmlFilename="productions/lKorpiGH.xml" />
+		<storeItem xmlFilename="pallets/blueCheesecakePallet.xml" />
+		<storeItem xmlFilename="pallets/carrotCakePallet.xml" />
+		<storeItem xmlFilename="pallets/cranMuffinPallet.xml" />
+		<storeItem xmlFilename="pallets/blueMuffinPallet.xml" />
+		<storeItem xmlFilename="pallets/blueberryJuicePallet.xml" />
+		<storeItem xmlFilename="pallets/berryJuicePallet.xml" />
+		<storeItem xmlFilename="pallets/cranberryJuicePallet.xml" />
+		<storeItem xmlFilename="pallets/ryeBreadBoxPallet.xml" />
+		<storeItem xmlFilename="pallets/ryeFlourPallet.xml" />
+		<storeItem xmlFilename="pallets/onionBoxPallet.xml" />
 	</storeItems>
     <maps>
         <map id="SampleModMap" className="Mission00" filename="$dataS/scripts/missions/mission00.lua" configFilename="maps/map.xml" defaultVehiclesXMLFilename="maps/vehicles.xml" defaultPlaceablesXMLFilename="maps/placeables.xml" defaultGrowthXMLFilename="maps/maps_growth.xml" defaultItemsXMLFilename="maps/items.xml">
@@ -39,7 +82,7 @@ Crops and Paintable textures added by Jookya
                 <de>Korpi</de>
             </title>
             <description>
-                <en>Welcome in Korpi.</en>
+                <en>Welcome to Korpi.</en>
                 <de>Wilkommen in Korpi.</de>
             </description>
             <iconFilename>preview.png</iconFilename>

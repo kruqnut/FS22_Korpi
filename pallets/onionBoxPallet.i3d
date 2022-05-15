@@ -9,12 +9,12 @@
     <File fileId="2" filename="$data/objects/pallets/euroPallet01_diffuse.png"/>
     <File fileId="3" filename="$data/objects/pallets/euroPallet01_normal.png"/>
     <File fileId="4" filename="$data/objects/pallets/euroPallet01_specular.png"/>
-    <File fileId="5" filename="onionBox_diffuse.png"/>
-    <File fileId="6" filename="onionBox_normal.png"/>
-    <File fileId="7" filename="onionBox_specular.png"/>
-    <File fileId="8" filename="onion_diffuse.png"/>
-    <File fileId="9" filename="onion_normal.png"/>
-    <File fileId="10" filename="onion_specular.png"/>
+    <File fileId="5" filename="textures/onionBox_diffuse.png"/>
+    <File fileId="6" filename="$data/objects/pallets/tomatoesBoxPallet/tomatoesBox_normal.dds"/>
+    <File fileId="7" filename="$data/objects/pallets/tomatoesBoxPallet/tomatoesBox_specular.dds"/>
+    <File fileId="8" filename="textures/onion_diffuse.png"/>
+    <File fileId="9" filename="textures/onion_normal.png"/>
+    <File fileId="10" filename="textures/onion_specular.png"/>
   </Files>
 
 
