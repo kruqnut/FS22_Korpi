@@ -162,7 +162,7 @@
             <capacity fillType="WATER"      capacity="21000" />
             <capacity fillType="ONION"    capacity="20000" />
 			<capacity fillType="GRAPE"    capacity="20000" />
-			            <capacity fillType="LETTUCE"    capacity="20000" />
+			<capacity fillType="LETTUCE"    capacity="20000" />
             <capacity fillType="TOMATO"     capacity="20000" />
             <capacity fillType="STRAWBERRY" capacity="20000" />
         </storage>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="65">
     <author>FinFarmingSim</author>
-    <version>1.0.3.4</version>
+    <version>1.0.3.5</version>
     <title>
         <en>Korpi</en>
         <de>Korpi</de>
@@ -74,6 +74,7 @@ Crops and Paintable textures added by Jookya
 		<storeItem xmlFilename="pallets/ryeBreadBoxPallet.xml" />
 		<storeItem xmlFilename="pallets/ryeFlourPallet.xml" />
 		<storeItem xmlFilename="pallets/onionBoxPallet.xml" />
+		<storeItem xmlFilename="pallets/hempOilPallet.xml" />
 	</storeItems>
     <maps>
         <map id="SampleModMap" className="Mission00" filename="$dataS/scripts/missions/mission00.lua" configFilename="maps/map.xml" defaultVehiclesXMLFilename="maps/vehicles.xml" defaultPlaceablesXMLFilename="maps/placeables.xml" defaultGrowthXMLFilename="maps/maps_growth.xml" defaultItemsXMLFilename="maps/items.xml">
@@ -88,7 +89,12 @@ Crops and Paintable textures added by Jookya
             <iconFilename>preview.png</iconFilename>
         </map>
     </maps>
-	
-	<storeItems>
-    </storeItems>
+	<l10n>
+		<text name="fillType_hempOil">
+			<de>CBD Oil</de>
+			<en>CBD Oil</en>
+			<ru>CBD Oil</ru>
+		</text>
+	</l10n>
+
 </modDesc>

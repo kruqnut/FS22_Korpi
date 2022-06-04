@@ -1802,7 +1802,27 @@
             <image      hud     ="hud/fillTypes/hud_fill_ryebread.png" />
             <pallet     filename="pallets/ryeBreadBoxPallet.xml" />
         </fillType>
-
+		<fillType name="HEMP_OIL" title="$l10n_fillType_hempOil" showOnPriceTable="true">
+            <physics massPerLiter="1" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="2.25">
+                <factors>
+                    <factor period="1"  value="0.93" />
+                    <factor period="2"  value="1.06" />
+                    <factor period="3"  value="1.14" />
+                    <factor period="4"  value="1.27" />
+                    <factor period="5"  value="1.21" />
+                    <factor period="6"  value="1.13" />
+                    <factor period="7"  value="1.03" />
+                    <factor period="8"  value="1.00" />
+                    <factor period="9"  value="0.92" />
+                    <factor period="10" value="0.85" />
+                    <factor period="11" value="0.79" />
+                    <factor period="12" value="0.83" />
+                </factors>
+            </economy>
+            <image      hud     ="hud/fillTypes/hud_fill_hempOil.png" />
+            <pallet     filename="pallets/hempOilPallet.xml" />
+        </fillType>
 		
 <!-- horses -->
         <fillType name="HORSE_PALOMINO" title="$l10n_fillType_horse" showOnPriceTable="false">
@@ -1949,7 +1969,7 @@
         <fillTypeCategory name="FARMSILO" >WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SORGHUM RYE HEMP CRANBERRY</fillTypeCategory>
         <fillTypeCategory name="HAYLOFT" >STRAW DRYGRASS_WINDROW HEMP_WINDROW</fillTypeCategory>
         <fillTypeCategory name="LOADINGVEHICLE">WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SEEDS FORAGE CHAFF WOODCHIPS SILAGE FERTILIZER LIME SORGHUM RYE HEMP HEMP_WINDROW</fillTypeCategory>
-        <fillTypeCategory name="PRODUCT">FLOUR BREAD CAKE BUTTER CHEESE FABRIC SUGAR CLOTHES CEREAL SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL GRAPE RAISINS GRAPEJUICE CHOCOLATE BOARDS FURNITURE STRAWBERRY LETTUCE TOMATO BLUEBERRYJUICE CRANBERRYJUICE BERRYJUICE BLUEMUFFIN BLUECHEESECAKE CRANMUFFIN CARROTCAKE RYEFLOUR RYEBREAD</fillTypeCategory>
+        <fillTypeCategory name="PRODUCT">FLOUR BREAD CAKE BUTTER CHEESE FABRIC SUGAR CLOTHES CEREAL SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL GRAPE RAISINS GRAPEJUICE CHOCOLATE BOARDS FURNITURE STRAWBERRY LETTUCE TOMATO BLUEBERRYJUICE CRANBERRYJUICE BERRYJUICE BLUEMUFFIN BLUECHEESECAKE CRANMUFFIN CARROTCAKE RYEFLOUR RYEBREAD HEMP_OIL</fillTypeCategory>
         <fillTypeCategory name="PRODUCT_BGA">METHANE ELECTRICCHARGE</fillTypeCategory>
     </fillTypeCategories>
 
