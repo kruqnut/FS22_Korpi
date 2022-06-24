@@ -40,7 +40,7 @@
 
     <gameplayHints filename="$dataS/gameplayHints.xml" />
 <precisionFarming>
- <soilMap filename="infoLayer_soilMap.grle"/>
+ <soilMap filename="maps/data/infoLayer_soilMap.grle"/>
  <fruitRequirements>
  <fruitRequirement fruitTypeName="RYE" alwaysAllowFertilization="false"
  ignoreOverfertilization="false">
@@ -51,10 +51,10 @@
  </fruitRequirement>
   <fruitRequirement fruitTypeName="HEMP" alwaysAllowFertilization="false"
  ignoreOverfertilization="false">
- <soil soilTypeIndex="1" targetLevel="180" reduction="170" yieldPotential="0.8"/>
- <soil soilTypeIndex="2" targetLevel="230" reduction="200" yieldPotential="1.0"/>
- <soil soilTypeIndex="3" targetLevel="280" reduction="250" yieldPotential="1.25"/>
- <soil soilTypeIndex="4" targetLevel="250" reduction="250" yieldPotential="0.9"/>
+ <soil soilTypeIndex="1" targetLevel="170" reduction="160" yieldPotential="0.8"/>
+ <soil soilTypeIndex="2" targetLevel="190" reduction="170" yieldPotential="1.0"/>
+ <soil soilTypeIndex="3" targetLevel="220" reduction="210" yieldPotential="1.25"/>
+ <soil soilTypeIndex="4" targetLevel="210" reduction="210" yieldPotential="0.9"/>
  </fruitRequirement>
   <fruitRequirement fruitTypeName="CRANBERRY" alwaysAllowFertilization="false"
  ignoreOverfertilization="false">
