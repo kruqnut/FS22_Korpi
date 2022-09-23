@@ -789,29 +789,29 @@
             </period>
             <period index="5">
                 <update range="1" set="4" /> <!-- always grow to first weed state -->
-                <update range="2-8" set="10" />
+                <update range="2-8" add="2" />
             </period>
 <!--AUG --> <period index="6">
                 <update range="1" set="4" /> <!-- always grow to first weed state -->
-                <update range="2-12" add="1" />
+                <update range="2-10" add="2" />
             </period>
             <period index="7">
-                <update range="2-12" set="1" />
+                <update range="2-10" add="2" />
             </period>
             <period index="8">
-                <update range="2-12" set="1" />
+                <update range="2-10" add="2" />
             </period>
             <period index="9">
-                <update range="2-12" set="1" />
+                <update range="2-10" add="2" />
             </period>
             <period index="10">
-                <update range="2-12" set="1" />
+                <update range="2-10" add="2" />
             </period>
             <period index="11">
-                <update range="2-12" set="1" />
+                <update range="2-10" add="2" />
             </period>
             <period index="12">
-                <update range="2-12" set="1" />
+                <update range="2-10" add="2" />
             </period>
         </fruit>
     </seasonal>
